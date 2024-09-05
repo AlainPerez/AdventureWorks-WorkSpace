@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Description />
+  <DataSet Name="TopEmployees">
+    <Query>
+      <DataSourceReference>ShDS_AdventureWorks</DataSourceReference>
+      <DataSetParameters>
+        <DataSetParameter Name="@ProductCategory">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>true</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+        </DataSetParameter>
+        <DataSetParameter Name="@ProductSubcategory">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>true</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+        </DataSetParameter>
+        <DataSetParameter Name="@StartDate">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>true</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+        </DataSetParameter>
+        <DataSetParameter Name="@EndDate">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>true</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+        </DataSetParameter>
+      </DataSetParameters>
+      <CommandText>SELECT TOP 5 PER.LastName, PER.FirstName, E.[BusinessEntityID], SUM(DET.LineTotal) AS SaleAmount
+FROM [Sales].[SalesPerson] SP 
+        INNER JOIN [Sales].[SalesOrderHeader] SOH	ON SP.[BusinessEntityID] = SOH.[SalesPersonID]
+        INNER JOIN Sales.SalesOrderDetail DET		ON SOH.SalesOrderID = DET.SalesOrderID
+        INNER JOIN [Sales].[SalesTerritory] ST		ON SP.[TerritoryID] = ST.[TerritoryID] 
+        INNER JOIN [HumanResources].[Employee] E	ON SOH.[SalesPersonID] = E.[BusinessEntityID] 
+		INNER JOIN [Person].[Person] PER			ON PER.[BusinessEntityID] = SP.[BusinessEntityID]
+		INNER JOIN Production.Product P ON DET.ProductID = P.ProductID INNER JOIN
+   Production.ProductSubcategory PS ON P.ProductSubcategoryID = PS.ProductSubcategoryID INNER JOIN
+   Production.ProductCategory PC ON PS.ProductCategoryID = PC.ProductCategoryID
+WHERE       (PC.ProductCategoryID = @ProductCategory) AND (PS.ProductSubcategoryID IN (@ProductSubcategory)) 
+			AND 
+			(SOH.OrderDate &gt; @StartDate) AND (SOH.OrderDate &lt; @EndDate)
+GROUP BY    PER.LastName, PER.FirstName, E.[BusinessEntityID]
+ORDER BY    SUM(DET.LineTotal) DESC</CommandText>
+      <Timeout>30</Timeout>
+      <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+    </Query>
+    <Fields>
+      <Field Name="LastName">
+        <DataField>LastName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="FirstName">
+        <DataField>FirstName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="BusinessEntityID">
+        <DataField>BusinessEntityID</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="SaleAmount">
+        <DataField>SaleAmount</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="FullName">
+        <Value>=Fields!LastName.Value &amp; ", " &amp; Fields!FirstName.Value</Value>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

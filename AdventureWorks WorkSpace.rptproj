@@ -49,6 +49,11 @@
     <Reports>@(Report)</Reports>
   </PropertyGroup>
   <ItemGroup>
+    <DataSet Include="SalesEmps.rsd" />
+    <DataSet Include="TopCustomerStores.rsd" />
+    <DataSet Include="TopEmployees.rsd" />
+  </ItemGroup>
+  <ItemGroup>
     <DataSource Include="ShDS_AdventureWorks.rds" />
   </ItemGroup>
   <ItemGroup>

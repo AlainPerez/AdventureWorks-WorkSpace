@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Description />
+  <DataSet Name="TopCustomerStores">
+    <Query>
+      <DataSourceReference>ShDS_AdventureWorks</DataSourceReference>
+      <DataSetParameters>
+        <DataSetParameter Name="@ProductSubcategory">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>true</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+        </DataSetParameter>
+        <DataSetParameter Name="@StartDate">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>true</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+        </DataSetParameter>
+        <DataSetParameter Name="@EndDate">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>true</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+        </DataSetParameter>
+        <DataSetParameter Name="@ProductCategory">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>true</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+        </DataSetParameter>
+      </DataSetParameters>
+      <CommandText>SELECT top 5
+    S.Name as Store, C.StoreID, COUNT(SOH.SalesOrderID) as NSalesOrders, SUM(DET.LineTotal) as SaleAmount 
+FROM Sales.SalesOrderHeader SOH
+	INNER JOIN [Sales].[Customer] C	ON C.[CustomerID] = SOH.[CustomerID]
+	INNER JOIN [Sales].[Store] S ON C.StoreID = S.BusinessEntityID
+	INNER JOIN Sales.SalesOrderDetail DET ON  DET.SalesOrderID = SOH.SalesOrderID
+	INNER JOIN Production.Product P ON P.ProductID = DET.ProductID
+	INNER JOIN Production.ProductSubcategory PS ON P.ProductSubcategoryID = PS.ProductSubcategoryID 
+WHERE C.StoreID IS NOT NULL
+   AND PS.ProductCategoryID = (@ProductCategory) 
+   AND PS.ProductSubcategoryID IN (@ProductSubcategory)
+   AND SOH.OrderDate &gt; (@StartDate) AND 
+       SOH.OrderDate &lt; (@EndDate) 
+ 
+GROUP BY  S.Name, C.StoreID
+ORDER BY    SUM(DET.LineTotal) DESC</CommandText>
+      <Timeout>30</Timeout>
+      <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+    </Query>
+    <Fields>
+      <Field Name="Store">
+        <DataField>Store</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="SaleAmount">
+        <DataField>SaleAmount</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="StoreID">
+        <DataField>StoreID</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="NSalesOrders">
+        <DataField>NSalesOrders</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

@@ -8,9 +8,9 @@
     </am:CreatedBy>
     <am:UpdatedBy>
       <am:Name>SSDTRS</am:Name>
-      <am:Version>17.10.35122.118</am:Version>
+      <am:Version>17.11.35222.181</am:Version>
     </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2024-09-05T15:36:21.0211233Z</am:LastModifiedTimestamp>
+    <am:LastModifiedTimestamp>2024-09-05T20:41:49.1259813Z</am:LastModifiedTimestamp>
   </am:AuthoringMetadata>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -22,8 +22,8 @@
   </DataSources>
   <DataSets>
     <DataSet Name="TopEmployees">
-      <Query>
-        <DataSourceName>ShDS_AdventureWorks</DataSourceName>
+      <SharedDataSet>
+        <SharedDataSetReference>TopEmployees</SharedDataSetReference>
         <QueryParameters>
           <QueryParameter Name="@ProductCategory">
             <Value>=Parameters!ProductCategory.Value</Value>
@@ -38,24 +38,7 @@
             <Value>=Parameters!EndDate.Value</Value>
           </QueryParameter>
         </QueryParameters>
-        <CommandText>SELECT TOP 5 PER.LastName, PER.FirstName, E.[BusinessEntityID], SUM(DET.LineTotal) AS SaleAmount
-FROM [Sales].[SalesPerson] SP 
-        INNER JOIN [Sales].[SalesOrderHeader] SOH	ON SP.[BusinessEntityID] = SOH.[SalesPersonID]
-        INNER JOIN Sales.SalesOrderDetail DET		ON SOH.SalesOrderID = DET.SalesOrderID
-        INNER JOIN [Sales].[SalesTerritory] ST		ON SP.[TerritoryID] = ST.[TerritoryID] 
-        INNER JOIN [HumanResources].[Employee] E	ON SOH.[SalesPersonID] = E.[BusinessEntityID] 
-		INNER JOIN [Person].[Person] PER			ON PER.[BusinessEntityID] = SP.[BusinessEntityID]
-		INNER JOIN Production.Product P ON DET.ProductID = P.ProductID INNER JOIN
-   Production.ProductSubcategory PS ON P.ProductSubcategoryID = PS.ProductSubcategoryID INNER JOIN
-   Production.ProductCategory PC ON PS.ProductCategoryID = PC.ProductCategoryID
-WHERE       (PC.ProductCategoryID = @ProductCategory) AND (PS.ProductSubcategoryID IN (@ProductSubcategory)) 
-			AND 
-			(SOH.OrderDate &gt; @StartDate) AND (SOH.OrderDate &lt; @EndDate)
-GROUP BY    PER.LastName, PER.FirstName, E.[BusinessEntityID]
-ORDER BY    SUM(DET.LineTotal) DESC</CommandText>
-        <Timeout>30</Timeout>
-        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
-      </Query>
+      </SharedDataSet>
       <Fields>
         <Field Name="LastName">
           <DataField>LastName</DataField>
@@ -74,7 +57,7 @@ ORDER BY    SUM(DET.LineTotal) DESC</CommandText>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="FullName">
-          <Value>=Fields!LastName.Value &amp; ", " &amp; Fields!FirstName.Value</Value>
+          <DataField>FullName</DataField>
         </Field>
       </Fields>
     </DataSet>
@@ -99,8 +82,8 @@ ORDER BY    Name</CommandText>
       </Fields>
     </DataSet>
     <DataSet Name="TopCustomerStores">
-      <Query>
-        <DataSourceName>ShDS_AdventureWorks</DataSourceName>
+      <SharedDataSet>
+        <SharedDataSetReference>TopCustomerStores</SharedDataSetReference>
         <QueryParameters>
           <QueryParameter Name="@ProductSubcategory">
             <Value>=Parameters!ProductSubcategory.Value</Value>
@@ -115,25 +98,7 @@ ORDER BY    Name</CommandText>
             <Value>=Parameters!ProductCategory.Value</Value>
           </QueryParameter>
         </QueryParameters>
-        <CommandText>SELECT top 5
-    S.Name as Store, C.StoreID, COUNT(SOH.SalesOrderID) as NSalesOrders, SUM(DET.LineTotal) as SaleAmount 
-FROM Sales.SalesOrderHeader SOH
-	INNER JOIN [Sales].[Customer] C	ON C.[CustomerID] = SOH.[CustomerID]
-	INNER JOIN [Sales].[Store] S ON C.StoreID = S.BusinessEntityID
-	INNER JOIN Sales.SalesOrderDetail DET ON  DET.SalesOrderID = SOH.SalesOrderID
-	INNER JOIN Production.Product P ON P.ProductID = DET.ProductID
-	INNER JOIN Production.ProductSubcategory PS ON P.ProductSubcategoryID = PS.ProductSubcategoryID 
-WHERE C.StoreID IS NOT NULL
-   AND PS.ProductCategoryID = (@ProductCategory) 
-   AND PS.ProductSubcategoryID IN (@ProductSubcategory)
-   AND SOH.OrderDate &gt; (@StartDate) AND 
-       SOH.OrderDate &lt; (@EndDate) 
- 
-GROUP BY  S.Name, C.StoreID
-ORDER BY    SUM(DET.LineTotal) DESC</CommandText>
-        <Timeout>30</Timeout>
-        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
-      </Query>
+      </SharedDataSet>
       <Fields>
         <Field Name="Store">
           <DataField>Store</DataField>
@@ -206,11 +171,6 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
                         <TablixCell>
                           <CellContents>
                             <Textbox Name="FullName_Label">
-                              <UserSort>
-                                <SortExpression>=Fields!FullName.Value</SortExpression>
-                                <SortExpressionScope>TopEmployeesTable_Group1</SortExpressionScope>
-                                <SortTarget>TopEmployees</SortTarget>
-                              </UserSort>
                               <KeepTogether>true</KeepTogether>
                               <Paragraphs>
                                 <Paragraph>
@@ -391,7 +351,7 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
                       </Group>
                       <SortExpressions>
                         <SortExpression>
-                          <Value>=Fields!FullName.Value</Value>
+                          <Value>=Fields!SaleAmount.Value</Value>
                           <Direction>Descending</Direction>
                         </SortExpression>
                       </SortExpressions>
@@ -669,7 +629,7 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
                       <Border>
                         <Color>Gainsboro</Color>
                         <Style>Solid</Style>
-                        <Width>0.75pt</Width>
+                        <Width>0.5pt</Width>
                       </Border>
                       <BackgroundColor>#00ffffff</BackgroundColor>
                     </Style>
@@ -680,6 +640,7 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
                     <Hidden>true</Hidden>
                     <Style>
                       <Border>
+                        <Color>LightGrey</Color>
                         <Style>Solid</Style>
                         <Width>0.75pt</Width>
                       </Border>
@@ -714,9 +675,8 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
                   </Style>
                 </ChartNoDataMessage>
                 <DataSetName>TopEmployees</DataSetName>
-                <Top>0.01389in</Top>
-                <Left>3.24306in</Left>
-                <Height>2.375in</Height>
+                <Left>3.25694in</Left>
+                <Height>2.3125in</Height>
                 <Width>4.01736in</Width>
                 <ZIndex>1</ZIndex>
                 <CustomProperties>
@@ -731,10 +691,10 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
               </Chart>
             </ReportItems>
             <DataElementOutput>ContentsOnly</DataElementOutput>
-            <Top>2.25in</Top>
-            <Left>0.09375in</Left>
+            <Top>2in</Top>
+            <Left>0.21875in</Left>
             <Height>2.4375in</Height>
-            <Width>7.26042in</Width>
+            <Width>7.2743in</Width>
             <Style />
           </Rectangle>
           <Textbox Name="DateRange">
@@ -817,10 +777,10 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
                 </Style>
               </Paragraph>
             </Paragraphs>
-            <Top>1.48611in</Top>
-            <Left>0.09375in</Left>
+            <Top>1.10416in</Top>
+            <Left>0.21875in</Left>
             <Height>0.47222in</Height>
-            <Width>7.26042in</Width>
+            <Width>7.2743in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border />
@@ -835,18 +795,18 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
             <Value>wholelogolft_lowres</Value>
             <MIMEType>image/jpeg</MIMEType>
             <Sizing>Fit</Sizing>
-            <Left>0.09375in</Left>
-            <Height>1.01042in</Height>
+            <Left>0.21875in</Left>
+            <Height>0.86459in</Height>
             <Width>2.57639in</Width>
             <ZIndex>2</ZIndex>
             <Style />
           </Image>
           <Rectangle Name="Banner">
             <DataElementOutput>ContentsOnly</DataElementOutput>
-            <Top>1.125in</Top>
-            <Left>0.09375in</Left>
-            <Height>0.25in</Height>
-            <Width>7.26042in</Width>
+            <Top>0.875in</Top>
+            <Left>0.21875in</Left>
+            <Height>0.15972in</Height>
+            <Width>7.29167in</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border />
@@ -859,7 +819,7 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Top Employees</Value>
+                    <Value>Top 5 Employees</Value>
                     <Style>
                       <FontSize>12pt</FontSize>
                       <FontWeight>Bold</FontWeight>
@@ -872,16 +832,16 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
                 </Style>
               </Paragraph>
             </Paragraphs>
-            <Top>2in</Top>
-            <Left>0.09375in</Left>
+            <Top>1.75in</Top>
+            <Left>0.21875in</Left>
             <Height>0.25in</Height>
-            <Width>7.26042in</Width>
+            <Width>7.29167in</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>
                 <Color>#000000</Color>
               </Border>
-              <BackgroundColor>Silver</BackgroundColor>
+              <BackgroundColor>Black</BackgroundColor>
               <PaddingLeft>6pt</PaddingLeft>
             </Style>
           </Textbox>
@@ -893,7 +853,7 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>Top Stores</Value>
+                        <Value>Top 5 Stores</Value>
                         <Style>
                           <FontSize>12pt</FontSize>
                           <FontWeight>Bold</FontWeight>
@@ -913,7 +873,7 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
                   <Border>
                     <Color>#000000</Color>
                   </Border>
-                  <BackgroundColor>Silver</BackgroundColor>
+                  <BackgroundColor>Black</BackgroundColor>
                   <PaddingLeft>6pt</PaddingLeft>
                 </Style>
               </Textbox>
@@ -1240,11 +1200,6 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
                           <CellContents>
                             <Textbox Name="Textbox14">
                               <CanGrow>true</CanGrow>
-                              <UserSort>
-                                <SortExpression>=Fields!Store.Value</SortExpression>
-                                <SortExpressionScope>Store</SortExpressionScope>
-                                <SortTarget>TopCustomerStores</SortTarget>
-                              </UserSort>
                               <KeepTogether>true</KeepTogether>
                               <Paragraphs>
                                 <Paragraph>
@@ -1364,6 +1319,7 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
                                 <PaddingBottom>2pt</PaddingBottom>
                               </Style>
                             </Textbox>
+                            <rd:Selected>true</rd:Selected>
                           </CellContents>
                         </TablixCell>
                         <TablixCell>
@@ -1420,7 +1376,8 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
                       </Group>
                       <SortExpressions>
                         <SortExpression>
-                          <Value>=Fields!Store.Value</Value>
+                          <Value>=Fields!NSalesOrders.Value</Value>
+                          <Direction>Descending</Direction>
                         </SortExpression>
                       </SortExpressions>
                       <TablixMembers>
@@ -1682,7 +1639,7 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
                   </Style>
                 </ChartNoDataMessage>
                 <DataSetName>TopCustomerStores</DataSetName>
-                <Top>1.49306in</Top>
+                <Top>0.99306in</Top>
                 <Left>0.03819in</Left>
                 <Height>2.64583in</Height>
                 <Width>3in</Width>
@@ -1698,8 +1655,8 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
               </Chart>
             </ReportItems>
             <DataElementOutput>ContentsOnly</DataElementOutput>
-            <Top>4.875in</Top>
-            <Left>0.08681in</Left>
+            <Top>4.625in</Top>
+            <Left>0.21181in</Left>
             <Height>4.13889in</Height>
             <Width>7.26736in</Width>
             <ZIndex>5</ZIndex>
@@ -1712,7 +1669,7 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
       <Width>7.69458in</Width>
       <Page>
         <PageHeader>
-          <Height>0.34375in</Height>
+          <Height>0.29688in</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -1759,7 +1716,7 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
           </Style>
         </PageHeader>
         <PageFooter>
-          <Height>1.10069in</Height>
+          <Height>0.46875in</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -1792,69 +1749,12 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
                 <BackgroundColor>White</BackgroundColor>
               </Style>
             </Textbox>
-            <Textbox Name="FooterCompany">
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>Adventure Works Cycles</Value>
-                      <Style>
-                        <Color>SteelBlue</Color>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style />
-                </Paragraph>
-              </Paragraphs>
-              <Top>0.10417in</Top>
-              <Left>0.125in</Left>
-              <Height>0.25in</Height>
-              <Width>2.25in</Width>
-              <ZIndex>1</ZIndex>
-              <Style />
-            </Textbox>
-            <Textbox Name="FooterURL">
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>Adventure Works Database</Value>
-                      <Style>
-                        <Color>SteelBlue</Color>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style>
-                    <TextAlign>Center</TextAlign>
-                  </Style>
-                </Paragraph>
-              </Paragraphs>
-              <ActionInfo>
-                <Actions>
-                  <Action>
-                    <Hyperlink>https://learn.microsoft.com/en-us/sql/samples/sql-samples-where-are?view=sql-server-ver16</Hyperlink>
-                  </Action>
-                </Actions>
-              </ActionInfo>
-              <Top>0.125in</Top>
-              <Left>2.42014in</Left>
-              <Height>0.25in</Height>
-              <Width>2.25in</Width>
-              <ZIndex>2</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-              </Style>
-            </Textbox>
             <Line Name="line1">
               <Top>0.0625in</Top>
               <Left>0.125in</Left>
               <Height>0in</Height>
               <Width>7.26042in</Width>
-              <ZIndex>3</ZIndex>
+              <ZIndex>1</ZIndex>
               <Style>
                 <Border>
                   <Color>Firebrick</Color>
@@ -1862,44 +1762,6 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
                 </Border>
               </Style>
             </Line>
-            <Textbox Name="Textbox1">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>Adventure Works sales report for individual employees, featuring Sales Comparison and Current Month Sales Comparison charts, alongside a Current Month Order Summary table with drillthrough to detailed orders. This report highlights the use of multiple datasets, visualizations, drillthrough features, and dynamic parameters.</Value>
-                      <Style>
-                        <FontStyle>Normal</FontStyle>
-                        <FontWeight>Normal</FontWeight>
-                        <TextDecoration>None</TextDecoration>
-                        <Color>#000000</Color>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style />
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>Textbox1</rd:DefaultName>
-              <Top>0.41667in</Top>
-              <Left>0.125in</Left>
-              <Height>0.62167in</Height>
-              <Width>7.26042in</Width>
-              <ZIndex>4</ZIndex>
-              <Visibility>
-                <Hidden>=NOT Parameters!ShowDescription.Value</Hidden>
-              </Visibility>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
-              </Style>
-            </Textbox>
           </ReportItems>
           <Style />
         </PageFooter>

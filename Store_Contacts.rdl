@@ -8,9 +8,9 @@
     </am:CreatedBy>
     <am:UpdatedBy>
       <am:Name>SSDTRS</am:Name>
-      <am:Version>17.10.35122.118</am:Version>
+      <am:Version>17.11.35222.181</am:Version>
     </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2024-09-05T15:44:30.4674315Z</am:LastModifiedTimestamp>
+    <am:LastModifiedTimestamp>2024-09-05T22:22:56.7720236Z</am:LastModifiedTimestamp>
   </am:AuthoringMetadata>
   <Author>Mary Lingel MSFT</Author>
   <AutoRefresh>0</AutoRefresh>
@@ -37,6 +37,7 @@ FROM Sales.Store AS s INNER JOIN
    Person.Person AS p ON p.BusinessEntityID = bec.PersonID INNER JOIN
    Person.PersonPhone AS ph ON p.BusinessEntityID = ph.BusinessEntityID
 WHERE (s.BusinessEntityID = @StoreID)</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
         <Field Name="BusinessEntityID">
@@ -68,8 +69,9 @@ WHERE (s.BusinessEntityID = @StoreID)</CommandText>
     <DataSet Name="Stores">
       <Query>
         <DataSourceName>ShDS_AdventureWorks</DataSourceName>
-        <CommandText>SELECT DISTINCT BusinessEntityID, Name as Store
-FROM Sales.Store</CommandText>
+        <CommandText>SELECT s.BusinessEntityID, s.Name as Store
+FROM Sales.Store s</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
         <Field Name="BusinessEntityID">
@@ -101,6 +103,116 @@ FROM Sales.Store</CommandText>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
+                <TablixRow>
+                  <Height>0.25in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox1">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Full Name</Value>
+                                  <Style>
+                                    <FontSize>11pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox1</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>None</Style>
+                            </Border>
+                            <BackgroundColor>Black</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox2">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Title</Value>
+                                  <Style>
+                                    <FontSize>11pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox2</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>None</Style>
+                            </Border>
+                            <BackgroundColor>Black</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox3">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Phone</Value>
+                                  <Style>
+                                    <FontSize>11pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox3</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>None</Style>
+                            </Border>
+                            <BackgroundColor>Black</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
                 <TablixRow>
                   <Height>0.27083in</Height>
                   <TablixCells>
@@ -216,13 +328,17 @@ FROM Sales.Store</CommandText>
             <TablixRowHierarchy>
               <TablixMembers>
                 <TablixMember>
+                  <KeepWithGroup>After</KeepWithGroup>
+                </TablixMember>
+                <TablixMember>
                   <Group Name="Details" />
                 </TablixMember>
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>StoreContacts</DataSetName>
             <Top>0.1875in</Top>
-            <Height>0.27083in</Height>
+            <Left>0.375in</Left>
+            <Height>0.52083in</Height>
             <Width>4.6875in</Width>
             <Style>
               <Border>
@@ -230,44 +346,11 @@ FROM Sales.Store</CommandText>
               </Border>
             </Style>
           </Tablix>
-          <Textbox Name="tbDescription">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>Subreport displaying store contact information, used within Sales_Order_Details_2008R2 to show multiple store contacts. Features page header and footer items, which are excluded when rendered as a subreport.</Value>
-                    <Style>
-                      <Color>Brown</Color>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <Top>1.10417in</Top>
-            <Height>0.72223in</Height>
-            <Width>4.6875in</Width>
-            <ZIndex>1</ZIndex>
-            <Visibility>
-              <Hidden>=NOT Parameters!ShowAll.Value</Hidden>
-            </Visibility>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
         </ReportItems>
-        <Height>1.8264in</Height>
+        <Height>1.00001in</Height>
         <Style />
       </Body>
-      <Width>4.6875in</Width>
+      <Width>5.5625in</Width>
       <Page>
         <PageHeader>
           <Height>0.55208in</Height>
@@ -278,8 +361,9 @@ FROM Sales.Store</CommandText>
               <Source>Embedded</Source>
               <Value>AdventureWorksLogo</Value>
               <Sizing>FitProportional</Sizing>
+              <Left>0.375in</Left>
               <Height>0.5in</Height>
-              <Width>2.5in</Width>
+              <Width>2.13194in</Width>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -293,22 +377,34 @@ FROM Sales.Store</CommandText>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=Globals!ReportName</Value>
+                      <Value>=First(Fields!Store.Value, "StoreContacts")</Value>
                       <Style>
-                        <FontStyle>Italic</FontStyle>
+                        <FontStyle>Normal</FontStyle>
+                        <FontSize>12pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <Color>CornflowerBlue</Color>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value> CONTACT</Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontSize>12pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
                         <Color>CornflowerBlue</Color>
                       </Style>
                     </TextRun>
                   </TextRuns>
                   <Style>
-                    <TextAlign>Right</TextAlign>
+                    <TextAlign>Center</TextAlign>
                   </Style>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>ReportName</rd:DefaultName>
-              <Left>2.5in</Left>
-              <Height>0.5in</Height>
-              <Width>2.1875in</Width>
+              <Top>0.10417in</Top>
+              <Left>2.57639in</Left>
+              <Height>0.38889in</Height>
+              <Width>2.48611in</Width>
               <ZIndex>1</ZIndex>
               <Style>
                 <Border>
@@ -327,15 +423,6 @@ FROM Sales.Store</CommandText>
             </Border>
           </Style>
         </PageHeader>
-        <PageFooter>
-          <Height>0.76389in</Height>
-          <PrintOnLastPage>true</PrintOnLastPage>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-          </Style>
-        </PageFooter>
         <PageWidth>7.9375in</PageWidth>
         <LeftMargin>0.5in</LeftMargin>
         <RightMargin>0.5in</RightMargin>
@@ -357,30 +444,16 @@ FROM Sales.Store</CommandText>
         </DataSetReference>
       </ValidValues>
     </ReportParameter>
-    <ReportParameter Name="ShowAll">
-      <DataType>Boolean</DataType>
-      <DefaultValue>
-        <Values>
-          <Value>false</Value>
-        </Values>
-      </DefaultValue>
-      <Prompt>Show all information?</Prompt>
-    </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
       <NumberOfColumns>2</NumberOfColumns>
-      <NumberOfRows>1</NumberOfRows>
+      <NumberOfRows>2</NumberOfRows>
       <CellDefinitions>
         <CellDefinition>
           <ColumnIndex>0</ColumnIndex>
           <RowIndex>0</RowIndex>
           <ParameterName>StoreID</ParameterName>
-        </CellDefinition>
-        <CellDefinition>
-          <ColumnIndex>1</ColumnIndex>
-          <RowIndex>0</RowIndex>
-          <ParameterName>ShowAll</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>

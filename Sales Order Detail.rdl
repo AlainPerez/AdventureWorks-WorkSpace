@@ -8,9 +8,9 @@
     </am:CreatedBy>
     <am:UpdatedBy>
       <am:Name>SSDTRS</am:Name>
-      <am:Version>17.10.35122.118</am:Version>
+      <am:Version>17.11.35222.181</am:Version>
     </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2024-09-05T15:43:43.8949364Z</am:LastModifiedTimestamp>
+    <am:LastModifiedTimestamp>2024-09-05T19:08:11.8412582Z</am:LastModifiedTimestamp>
   </am:AuthoringMetadata>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -214,31 +214,31 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>0.31293in</Width>
+                  <Width>0.32098in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.31293in</Width>
+                  <Width>0.32098in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.8032in</Width>
+                  <Width>0.81125in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.87761in</Width>
+                  <Width>1.88566in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.00139in</Width>
+                  <Width>1.00944in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.87622in</Width>
+                  <Width>0.88427in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.87622in</Width>
+                  <Width>0.88427in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.87622in</Width>
+                  <Width>0.88427in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.87622in</Width>
+                  <Width>0.88427in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -259,7 +259,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                     <FontFamily />
                                     <FontSize>9pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
-                                    <Color>DarkSlateBlue</Color>
+                                    <Color>RoyalBlue</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -299,7 +299,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                     <FontFamily />
                                     <FontSize>9pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
-                                    <Color>DarkSlateBlue</Color>
+                                    <Color>RoyalBlue</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -339,7 +339,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                     <FontFamily />
                                     <FontSize>9pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
-                                    <Color>DarkSlateBlue</Color>
+                                    <Color>RoyalBlue</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -376,7 +376,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                     <FontFamily />
                                     <FontSize>9pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
-                                    <Color>DarkSlateBlue</Color>
+                                    <Color>RoyalBlue</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -413,7 +413,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                     <FontFamily />
                                     <FontSize>9pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
-                                    <Color>DarkSlateBlue</Color>
+                                    <Color>RoyalBlue</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -450,7 +450,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                     <FontFamily />
                                     <FontSize>9pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
-                                    <Color>DarkSlateBlue</Color>
+                                    <Color>RoyalBlue</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -489,7 +489,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                     <FontFamily />
                                     <FontSize>9pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
-                                    <Color>DarkSlateBlue</Color>
+                                    <Color>RoyalBlue</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -528,7 +528,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                     <FontFamily />
                                     <FontSize>9pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
-                                    <Color>DarkSlateBlue</Color>
+                                    <Color>RoyalBlue</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -568,7 +568,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                     <FontFamily />
                                     <FontSize>9pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
-                                    <Color>DarkSlateBlue</Color>
+                                    <Color>RoyalBlue</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1160,6 +1160,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                     <FontFamily />
                                     <FontSize>9pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
+                                    <Color>Tomato</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1199,6 +1200,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                     <FontSize>9pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Format>c</Format>
+                                    <Color>Tomato</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1266,9 +1268,9 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
             </TablixRowHierarchy>
             <DataSetName>SalesOrderDetail</DataSetName>
             <Top>3.5in</Top>
-            <Left>0.0625in</Left>
+            <Left>0.375in</Left>
             <Height>0.5625in</Height>
-            <Width>7.81294in</Width>
+            <Width>7.88542in</Width>
             <Style>
               <FontSize>9pt</FontSize>
             </Style>
@@ -1277,12 +1279,12 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>7.9375in</Width>
+                  <Width>8.25in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>3.4375in</Height>
+                  <Height>3.375in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -1307,7 +1309,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                     </Paragraph>
                                   </Paragraphs>
                                   <Top>0.25in</Top>
-                                  <Left>0.6875in</Left>
+                                  <Left>0.76042in</Left>
                                   <Height>0.1875in</Height>
                                   <Width>3.0625in</Width>
                                   <Style>
@@ -1331,7 +1333,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                     </Paragraph>
                                   </Paragraphs>
                                   <Top>0.625in</Top>
-                                  <Left>0.6875in</Left>
+                                  <Left>0.76042in</Left>
                                   <Height>0.1875in</Height>
                                   <Width>3.0625in</Width>
                                   <ZIndex>1</ZIndex>
@@ -1356,7 +1358,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                     </Paragraph>
                                   </Paragraphs>
                                   <Top>0.4375in</Top>
-                                  <Left>0.6875in</Left>
+                                  <Left>0.76042in</Left>
                                   <Height>0.1875in</Height>
                                   <Width>1.625in</Width>
                                   <ZIndex>2</ZIndex>
@@ -1381,7 +1383,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                     </Paragraph>
                                   </Paragraphs>
                                   <Top>1.6875in</Top>
-                                  <Left>6.1875in</Left>
+                                  <Left>6.26042in</Left>
                                   <Height>0.1875in</Height>
                                   <Width>1.5625in</Width>
                                   <ZIndex>3</ZIndex>
@@ -1406,7 +1408,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                     </Paragraph>
                                   </Paragraphs>
                                   <Top>1.25in</Top>
-                                  <Left>0.6875in</Left>
+                                  <Left>0.76042in</Left>
                                   <Height>0.1875in</Height>
                                   <Width>3.0625in</Width>
                                   <ZIndex>4</ZIndex>
@@ -1431,7 +1433,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                     </Paragraph>
                                   </Paragraphs>
                                   <Top>0.8125in</Top>
-                                  <Left>4.625in</Left>
+                                  <Left>4.69792in</Left>
                                   <Height>0.1875in</Height>
                                   <Width>3.0625in</Width>
                                   <ZIndex>5</ZIndex>
@@ -1450,7 +1452,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                             <FontFamily />
                                             <FontSize>9pt</FontSize>
                                             <FontWeight>Bold</FontWeight>
-                                            <Color>DarkSlateBlue</Color>
+                                            <Color>RoyalBlue</Color>
                                           </Style>
                                         </TextRun>
                                       </TextRuns>
@@ -1458,7 +1460,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                     </Paragraph>
                                   </Paragraphs>
                                   <Top>1.5in</Top>
-                                  <Left>1.9375in</Left>
+                                  <Left>2.01042in</Left>
                                   <Height>0.1875in</Height>
                                   <Width>3in</Width>
                                   <ZIndex>6</ZIndex>
@@ -1487,7 +1489,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                     </Paragraph>
                                   </Paragraphs>
                                   <Top>1.6875in</Top>
-                                  <Left>1.9375in</Left>
+                                  <Left>2.01042in</Left>
                                   <Height>0.1875in</Height>
                                   <Width>3in</Width>
                                   <ZIndex>7</ZIndex>
@@ -1512,7 +1514,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                     </Paragraph>
                                   </Paragraphs>
                                   <Top>0.625in</Top>
-                                  <Left>4.625in</Left>
+                                  <Left>4.69792in</Left>
                                   <Height>0.1875in</Height>
                                   <Width>3.0625in</Width>
                                   <ZIndex>8</ZIndex>
@@ -1531,7 +1533,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                             <FontFamily />
                                             <FontSize>9pt</FontSize>
                                             <FontWeight>Bold</FontWeight>
-                                            <Color>DarkSlateBlue</Color>
+                                            <Color>RoyalBlue</Color>
                                           </Style>
                                         </TextRun>
                                       </TextRuns>
@@ -1539,7 +1541,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                     </Paragraph>
                                   </Paragraphs>
                                   <Top>0.0625in</Top>
-                                  <Left>0.0625in</Left>
+                                  <Left>0.13542in</Left>
                                   <Height>0.1875in</Height>
                                   <Width>0.5625in</Width>
                                   <ZIndex>9</ZIndex>
@@ -1564,7 +1566,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                     </Paragraph>
                                   </Paragraphs>
                                   <Top>0.4375in</Top>
-                                  <Left>4.625in</Left>
+                                  <Left>4.69792in</Left>
                                   <Height>0.1875in</Height>
                                   <Width>1.625in</Width>
                                   <ZIndex>10</ZIndex>
@@ -1583,7 +1585,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                             <FontFamily />
                                             <FontSize>9pt</FontSize>
                                             <FontWeight>Bold</FontWeight>
-                                            <Color>DarkSlateBlue</Color>
+                                            <Color>RoyalBlue</Color>
                                           </Style>
                                         </TextRun>
                                       </TextRuns>
@@ -1591,7 +1593,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                     </Paragraph>
                                   </Paragraphs>
                                   <Top>1.5in</Top>
-                                  <Left>1in</Left>
+                                  <Left>1.07292in</Left>
                                   <Height>0.1875in</Height>
                                   <Width>0.875in</Width>
                                   <ZIndex>11</ZIndex>
@@ -1610,7 +1612,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                             <FontFamily />
                                             <FontSize>9pt</FontSize>
                                             <FontWeight>Bold</FontWeight>
-                                            <Color>DarkSlateBlue</Color>
+                                            <Color>RoyalBlue</Color>
                                           </Style>
                                         </TextRun>
                                       </TextRuns>
@@ -1618,7 +1620,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                     </Paragraph>
                                   </Paragraphs>
                                   <Top>1.5in</Top>
-                                  <Left>6.1875in</Left>
+                                  <Left>6.26042in</Left>
                                   <Height>0.1875in</Height>
                                   <Width>1.5625in</Width>
                                   <ZIndex>12</ZIndex>
@@ -1643,7 +1645,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                     </Paragraph>
                                   </Paragraphs>
                                   <Top>1.0625in</Top>
-                                  <Left>0.6875in</Left>
+                                  <Left>0.76042in</Left>
                                   <Height>0.1875in</Height>
                                   <Width>3.0625in</Width>
                                   <ZIndex>13</ZIndex>
@@ -1672,7 +1674,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                     </Paragraph>
                                   </Paragraphs>
                                   <Top>1.6875in</Top>
-                                  <Left>0.0625in</Left>
+                                  <Left>0.13542in</Left>
                                   <Height>0.1875in</Height>
                                   <Width>0.875in</Width>
                                   <ZIndex>14</ZIndex>
@@ -1691,7 +1693,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                             <FontFamily />
                                             <FontSize>9pt</FontSize>
                                             <FontWeight>Bold</FontWeight>
-                                            <Color>DarkSlateBlue</Color>
+                                            <Color>RoyalBlue</Color>
                                           </Style>
                                         </TextRun>
                                       </TextRuns>
@@ -1699,7 +1701,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                     </Paragraph>
                                   </Paragraphs>
                                   <Top>1.5in</Top>
-                                  <Left>0.0625in</Left>
+                                  <Left>0.13542in</Left>
                                   <Height>0.1875in</Height>
                                   <Width>0.875in</Width>
                                   <ZIndex>15</ZIndex>
@@ -1724,7 +1726,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                     </Paragraph>
                                   </Paragraphs>
                                   <Top>0.25in</Top>
-                                  <Left>4.625in</Left>
+                                  <Left>4.69792in</Left>
                                   <Height>0.1875in</Height>
                                   <Width>3.0625in</Width>
                                   <ZIndex>16</ZIndex>
@@ -1753,7 +1755,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                     </Paragraph>
                                   </Paragraphs>
                                   <Top>1.6875in</Top>
-                                  <Left>1in</Left>
+                                  <Left>1.07292in</Left>
                                   <Height>0.1875in</Height>
                                   <Width>0.875in</Width>
                                   <ZIndex>17</ZIndex>
@@ -1778,7 +1780,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                     </Paragraph>
                                   </Paragraphs>
                                   <Top>0.8125in</Top>
-                                  <Left>0.6875in</Left>
+                                  <Left>0.76042in</Left>
                                   <Height>0.1875in</Height>
                                   <Width>3.0625in</Width>
                                   <ZIndex>18</ZIndex>
@@ -1797,7 +1799,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                             <FontFamily />
                                             <FontSize>9pt</FontSize>
                                             <FontWeight>Bold</FontWeight>
-                                            <Color>DarkSlateBlue</Color>
+                                            <Color>RoyalBlue</Color>
                                           </Style>
                                         </TextRun>
                                       </TextRuns>
@@ -1805,7 +1807,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                     </Paragraph>
                                   </Paragraphs>
                                   <Top>0.0625in</Top>
-                                  <Left>3.9375in</Left>
+                                  <Left>4.01042in</Left>
                                   <Height>0.1875in</Height>
                                   <Width>0.625in</Width>
                                   <ZIndex>19</ZIndex>
@@ -1830,7 +1832,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                     </Paragraph>
                                   </Paragraphs>
                                   <Top>1.6875in</Top>
-                                  <Left>5in</Left>
+                                  <Left>5.07292in</Left>
                                   <Height>0.1875in</Height>
                                   <Width>1.125in</Width>
                                   <ZIndex>20</ZIndex>
@@ -1849,7 +1851,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                             <FontFamily />
                                             <FontSize>9pt</FontSize>
                                             <FontWeight>Bold</FontWeight>
-                                            <Color>DarkSlateBlue</Color>
+                                            <Color>RoyalBlue</Color>
                                           </Style>
                                         </TextRun>
                                       </TextRuns>
@@ -1857,7 +1859,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                     </Paragraph>
                                   </Paragraphs>
                                   <Top>1.5in</Top>
-                                  <Left>5in</Left>
+                                  <Left>5.07292in</Left>
                                   <Height>0.1875in</Height>
                                   <Width>1.125in</Width>
                                   <ZIndex>21</ZIndex>
@@ -1882,7 +1884,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                     </Paragraph>
                                   </Paragraphs>
                                   <Top>0.0625in</Top>
-                                  <Left>0.6875in</Left>
+                                  <Left>0.76042in</Left>
                                   <Height>0.1875in</Height>
                                   <Width>3.0625in</Width>
                                   <ZIndex>22</ZIndex>
@@ -1896,7 +1898,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                     <Paragraph>
                                       <TextRuns>
                                         <TextRun>
-                                          <Value>=Fields!Store.Value</Value>
+                                          <Value>=Fields!CustFirstName.Value + " " + Fields!CustLastName.Value</Value>
                                           <Style>
                                             <FontFamily />
                                             <FontSize>9pt</FontSize>
@@ -1907,7 +1909,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                     </Paragraph>
                                   </Paragraphs>
                                   <Top>0.0625in</Top>
-                                  <Left>4.625in</Left>
+                                  <Left>4.70486in</Left>
                                   <Height>0.1875in</Height>
                                   <Width>3.0625in</Width>
                                   <ZIndex>23</ZIndex>
@@ -1932,7 +1934,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                     </Paragraph>
                                   </Paragraphs>
                                   <Top>0.4375in</Top>
-                                  <Left>2.3125in</Left>
+                                  <Left>2.38542in</Left>
                                   <Height>0.1875in</Height>
                                   <Width>1.4375in</Width>
                                   <ZIndex>24</ZIndex>
@@ -1957,7 +1959,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                     </Paragraph>
                                   </Paragraphs>
                                   <Top>0.4375in</Top>
-                                  <Left>6.25in</Left>
+                                  <Left>6.32292in</Left>
                                   <Height>0.1875in</Height>
                                   <Width>1.4375in</Width>
                                   <ZIndex>25</ZIndex>
@@ -1976,7 +1978,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                             <FontFamily />
                                             <FontSize>9pt</FontSize>
                                             <FontWeight>Bold</FontWeight>
-                                            <Color>DarkSlateBlue</Color>
+                                            <Color>RoyalBlue</Color>
                                           </Style>
                                         </TextRun>
                                       </TextRuns>
@@ -1984,7 +1986,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                     </Paragraph>
                                   </Paragraphs>
                                   <Top>1.0625in</Top>
-                                  <Left>0.0625in</Left>
+                                  <Left>0.13542in</Left>
                                   <Height>0.1875in</Height>
                                   <Width>0.5625in</Width>
                                   <ZIndex>26</ZIndex>
@@ -1994,10 +1996,10 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                 </Textbox>
                               </ReportItems>
                               <DataElementOutput>ContentsOnly</DataElementOutput>
-                              <Top>1.38542in</Top>
-                              <Left>0.07292in</Left>
+                              <Top>1.19792in</Top>
+                              <Left>0.375in</Left>
                               <Height>1.98958in</Height>
-                              <Width>7.80208in</Width>
+                              <Width>7.875in</Width>
                               <Style>
                                 <Border>
                                   <Color>DarkSlateBlue</Color>
@@ -2017,7 +2019,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                         <FontFamily>Tahoma</FontFamily>
                                         <FontSize>14pt</FontSize>
                                         <FontWeight>Bold</FontWeight>
-                                        <Color>DarkSlateBlue</Color>
+                                        <Color>Navy</Color>
                                       </Style>
                                     </TextRun>
                                   </TextRuns>
@@ -2027,8 +2029,8 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <Top>0.9375in</Top>
-                              <Left>3.9375in</Left>
+                              <Top>0.6875in</Top>
+                              <Left>4.3125in</Left>
                               <Height>0.25in</Height>
                               <Width>3.8125in</Width>
                               <ZIndex>1</ZIndex>
@@ -2045,7 +2047,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                         <FontFamily>Tahoma</FontFamily>
                                         <FontSize>22pt</FontSize>
                                         <FontWeight>Bold</FontWeight>
-                                        <Color>DarkSlateBlue</Color>
+                                        <Color>Navy</Color>
                                       </Style>
                                     </TextRun>
                                   </TextRuns>
@@ -2055,8 +2057,8 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <Top>0.5625in</Top>
-                              <Left>3.9375in</Left>
+                              <Top>0.24306in</Top>
+                              <Left>4.3125in</Left>
                               <Height>0.375in</Height>
                               <Width>3.8125in</Width>
                               <ZIndex>2</ZIndex>
@@ -2066,10 +2068,11 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                               <Source>Embedded</Source>
                               <Value>logofull</Value>
                               <MIMEType>image/jpeg</MIMEType>
-                              <Top>0.0625in</Top>
-                              <Left>0.0625in</Left>
-                              <Height>1.1875in</Height>
-                              <Width>3.71875in</Width>
+                              <Sizing>FitProportional</Sizing>
+                              <Top>0.1875in</Top>
+                              <Left>0.4375in</Left>
+                              <Height>0.875in</Height>
+                              <Width>2.87153in</Width>
                               <ZIndex>3</ZIndex>
                               <Style>
                                 <FontFamily />
@@ -2103,16 +2106,18 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>SalesOrder</DataSetName>
-            <Height>3.4375in</Height>
-            <Width>7.9375in</Width>
+            <Top>0.01042in</Top>
+            <Left>0.01042in</Left>
+            <Height>3.375in</Height>
+            <Width>8.25in</Width>
             <ZIndex>1</ZIndex>
             <Style />
           </Tablix>
         </ReportItems>
-        <Height>4.0625in</Height>
+        <Height>4.30514in</Height>
         <Style />
       </Body>
-      <Width>7.9375in</Width>
+      <Width>8.62806in</Width>
       <Page>
         <LeftMargin>0.25in</LeftMargin>
         <RightMargin>0.25in</RightMargin>

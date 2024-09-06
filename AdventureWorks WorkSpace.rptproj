@@ -62,6 +62,7 @@
     <Report Include="Sales Order Detail.rdl" />
     <Report Include="Sales Trend.rdl" />
     <Report Include="Store_Contacts.rdl" />
+    <Report Include="Territory Sales Drilldown.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>

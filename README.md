@@ -1,0 +1,1 @@
+In this guide, I will demonstrate several examples of SQL Server Reporting Services (SSRS) using the AdventureWorks database. AdventureWorks is a sample database provided by Microsoft, ideal for learning and demonstrating SQL Server features, including SSRS.

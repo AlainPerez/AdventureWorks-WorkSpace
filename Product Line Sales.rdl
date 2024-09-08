@@ -10,7 +10,7 @@
       <am:Name>SSDTRS</am:Name>
       <am:Version>17.11.35222.181</am:Version>
     </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2024-09-07T21:56:48.6944331Z</am:LastModifiedTimestamp>
+    <am:LastModifiedTimestamp>2024-09-08T14:21:59.8016422Z</am:LastModifiedTimestamp>
   </am:AuthoringMetadata>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -820,7 +820,7 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Top 5 Employees</Value>
+                    <Value>Top 5 Employees by Sales</Value>
                     <Style>
                       <FontSize>12pt</FontSize>
                       <FontWeight>Bold</FontWeight>
@@ -854,7 +854,7 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>Top 5 Stores</Value>
+                        <Value>Top 5 Stores by Sales</Value>
                         <Style>
                           <FontSize>12pt</FontSize>
                           <FontWeight>Bold</FontWeight>
@@ -1399,7 +1399,7 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
                 <Top>0.63208in</Top>
                 <Left>0.22222in</Left>
                 <Height>0.5in</Height>
-                <Width>3.34722in</Width>
+                <Width>3.34723in</Width>
                 <ZIndex>2</ZIndex>
                 <Style>
                   <Border>

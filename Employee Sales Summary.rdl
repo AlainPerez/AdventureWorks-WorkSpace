@@ -10,7 +10,7 @@
       <am:Name>SSDTRS</am:Name>
       <am:Version>17.11.35222.181</am:Version>
     </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2024-09-07T21:54:48.8786576Z</am:LastModifiedTimestamp>
+    <am:LastModifiedTimestamp>2024-09-08T14:14:15.0767906Z</am:LastModifiedTimestamp>
   </am:AuthoringMetadata>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -185,14 +185,14 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
               </Paragraph>
             </Paragraphs>
             <Top>0.125in</Top>
-            <Left>1.125in</Left>
             <Height>0.375in</Height>
-            <Width>4.375in</Width>
+            <Width>6.31145in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
               </Border>
-              <BackgroundColor>CornflowerBlue</BackgroundColor>
+              <BackgroundColor>LightBlue</BackgroundColor>
+              <VerticalAlign>Middle</VerticalAlign>
             </Style>
           </Textbox>
           <Textbox Name="TitleEmployee">
@@ -239,7 +239,7 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
                 <Style />
               </Paragraph>
             </Paragraphs>
-            <Top>0.5in</Top>
+            <Top>0.625in</Top>
             <Left>1in</Left>
             <Height>0.375in</Height>
             <Width>4.375in</Width>
@@ -834,7 +834,7 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
             <Value>logopart</Value>
             <MIMEType>image/jpeg</MIMEType>
             <Sizing>Fit</Sizing>
-            <Top>0.18056in</Top>
+            <Top>0.125in</Top>
             <Left>6.31145in</Left>
             <Height>0.69444in</Height>
             <Width>1.65772in</Width>

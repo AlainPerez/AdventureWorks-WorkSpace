@@ -175,7 +175,7 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
                       <FontFamily>Tahoma</FontFamily>
                       <FontSize>16pt</FontSize>
                       <FontWeight>Bold</FontWeight>
-                      <Color>Red</Color>
+                      <Color>White</Color>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -191,7 +191,7 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
               <Border>
                 <Style>None</Style>
               </Border>
-              <BackgroundColor>LightBlue</BackgroundColor>
+              <BackgroundColor>LimeGreen</BackgroundColor>
               <VerticalAlign>Middle</VerticalAlign>
             </Style>
           </Textbox>
@@ -333,7 +333,7 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
                           </Paragraphs>
                           <ZIndex>11</ZIndex>
                           <Style>
-                            <BackgroundColor>Blue</BackgroundColor>
+                            <BackgroundColor>LimeGreen</BackgroundColor>
                             <FontFamily />
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -368,7 +368,7 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
                           </Paragraphs>
                           <ZIndex>10</ZIndex>
                           <Style>
-                            <BackgroundColor>Blue</BackgroundColor>
+                            <BackgroundColor>LimeGreen</BackgroundColor>
                             <FontFamily />
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -404,7 +404,7 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
                           </Paragraphs>
                           <ZIndex>9</ZIndex>
                           <Style>
-                            <BackgroundColor>Blue</BackgroundColor>
+                            <BackgroundColor>LimeGreen</BackgroundColor>
                             <FontFamily />
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>

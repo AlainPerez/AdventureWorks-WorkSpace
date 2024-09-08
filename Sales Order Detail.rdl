@@ -10,7 +10,7 @@
       <am:Name>SSDTRS</am:Name>
       <am:Version>17.11.35222.181</am:Version>
     </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2024-09-07T22:16:06.9384730Z</am:LastModifiedTimestamp>
+    <am:LastModifiedTimestamp>2024-09-08T17:34:08.5851867Z</am:LastModifiedTimestamp>
   </am:AuthoringMetadata>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -2025,7 +2025,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                         <FontFamily>Tahoma</FontFamily>
                                         <FontSize>14pt</FontSize>
                                         <FontWeight>Bold</FontWeight>
-                                        <Color>Navy</Color>
+                                        <Color>LimeGreen</Color>
                                       </Style>
                                     </TextRun>
                                   </TextRuns>
@@ -2053,7 +2053,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                         <FontFamily>Tahoma</FontFamily>
                                         <FontSize>22pt</FontSize>
                                         <FontWeight>Bold</FontWeight>
-                                        <Color>Navy</Color>
+                                        <Color>LimeGreen</Color>
                                       </Style>
                                     </TextRun>
                                   </TextRuns>

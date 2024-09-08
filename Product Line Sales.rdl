@@ -751,7 +751,7 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
                     <Style>
                       <FontSize>14pt</FontSize>
                       <FontWeight>Bold</FontWeight>
-                      <Color>Firebrick</Color>
+                      <Color>LimeGreen</Color>
                     </Style>
                   </TextRun>
                   <TextRun>
@@ -759,7 +759,7 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
                     <Style>
                       <FontSize>14pt</FontSize>
                       <FontWeight>Bold</FontWeight>
-                      <Color>SteelBlue</Color>
+                      <Color>LimeGreen</Color>
                     </Style>
                   </TextRun>
                   <TextRun>
@@ -769,7 +769,7 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
                       <FontStyle>Italic</FontStyle>
                       <FontSize>14pt</FontSize>
                       <FontWeight>Bold</FontWeight>
-                      <Color>Firebrick</Color>
+                      <Color>LimeGreen</Color>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -811,7 +811,7 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
             <ZIndex>3</ZIndex>
             <Style>
               <Border />
-              <BackgroundColor>Firebrick</BackgroundColor>
+              <BackgroundColor>LimeGreen</BackgroundColor>
             </Style>
           </Rectangle>
           <Textbox Name="TopEmployeesHeader">
@@ -842,7 +842,7 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
               <Border>
                 <Color>#000000</Color>
               </Border>
-              <BackgroundColor>Black</BackgroundColor>
+              <BackgroundColor>LimeGreen</BackgroundColor>
               <PaddingLeft>6pt</PaddingLeft>
             </Style>
           </Textbox>
@@ -1733,7 +1733,7 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
               <ZIndex>1</ZIndex>
               <Style>
                 <Border>
-                  <Color>Firebrick</Color>
+                  <Color>LimeGreen</Color>
                   <Style>Solid</Style>
                 </Border>
               </Style>

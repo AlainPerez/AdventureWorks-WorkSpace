@@ -10,7 +10,7 @@
       <am:Name>SSDTRS</am:Name>
       <am:Version>17.11.35222.181</am:Version>
     </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2024-09-06T00:21:33.2335997Z</am:LastModifiedTimestamp>
+    <am:LastModifiedTimestamp>2024-09-07T22:11:27.3428330Z</am:LastModifiedTimestamp>
   </am:AuthoringMetadata>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -80,9 +80,9 @@ ORDER BY ST.Name</CommandText>
             <Value>logofull</Value>
             <Sizing>FitProportional</Sizing>
             <Top>0.25in</Top>
-            <Left>0.25in</Left>
-            <Height>1in</Height>
-            <Width>2.53473in</Width>
+            <Left>0.375in</Left>
+            <Height>1.07638in</Height>
+            <Width>2.88195in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -131,10 +131,10 @@ ORDER BY ST.Name</CommandText>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>0.13888in</Top>
-            <Left>3.55556in</Left>
-            <Height>1.1875in</Height>
-            <Width>2.38556in</Width>
+            <Top>0.21526in</Top>
+            <Left>5.50992in</Left>
+            <Height>1.11112in</Height>
+            <Width>2.87167in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -151,15 +151,15 @@ ORDER BY ST.Name</CommandText>
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>0.94449in</Width>
+                  <Width>1.45987in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.56601in</Width>
+                  <Width>2.08139in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>0.25in</Height>
+                  <Height>0.32936in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -172,12 +172,15 @@ ORDER BY ST.Name</CommandText>
                                 <TextRun>
                                   <Value>Sales Order Number</Value>
                                   <Style>
+                                    <FontSize>14pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Color>White</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox2</rd:DefaultName>
@@ -187,13 +190,13 @@ ORDER BY ST.Name</CommandText>
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>Tomato</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -207,13 +210,14 @@ ORDER BY ST.Name</CommandText>
                                 <TextRun>
                                   <Value>Total Due</Value>
                                   <Style>
+                                    <FontSize>14pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Color>White</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Right</TextAlign>
+                                <TextAlign>Center</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
@@ -224,19 +228,19 @@ ORDER BY ST.Name</CommandText>
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>Tomato</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.25in</Height>
+                  <Height>0.32936in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -248,7 +252,9 @@ ORDER BY ST.Name</CommandText>
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontSize>12pt</FontSize>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -279,6 +285,7 @@ ORDER BY ST.Name</CommandText>
                                 <TextRun>
                                   <Value>=SUM(Fields!TotalDue.Value)</Value>
                                   <Style>
+                                    <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Format>'$'#,0.00;('$'#,0.00)</Format>
                                   </Style>
@@ -307,7 +314,7 @@ ORDER BY ST.Name</CommandText>
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.25in</Height>
+                  <Height>0.32936in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -319,7 +326,9 @@ ORDER BY ST.Name</CommandText>
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontSize>12pt</FontSize>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -351,6 +360,7 @@ ORDER BY ST.Name</CommandText>
                                 <TextRun>
                                   <Value>=SUM(Fields!TotalDue.Value)</Value>
                                   <Style>
+                                    <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Format>'$'#,0.00;('$'#,0.00)</Format>
                                   </Style>
@@ -380,7 +390,7 @@ ORDER BY ST.Name</CommandText>
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.25in</Height>
+                  <Height>0.32936in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -393,6 +403,8 @@ ORDER BY ST.Name</CommandText>
                                 <TextRun>
                                   <Value>=Fields!SalesOrderNumber.Value</Value>
                                   <Style>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
                                     <TextDecoration>Underline</TextDecoration>
                                     <Color>MediumBlue</Color>
                                   </Style>
@@ -440,6 +452,7 @@ ORDER BY ST.Name</CommandText>
                                 <TextRun>
                                   <Value>=SUM(Fields!TotalDue.Value)</Value>
                                   <Style>
+                                    <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Format>'$'#,0.00;('$'#,0.00)</Format>
                                   </Style>
@@ -479,7 +492,7 @@ ORDER BY ST.Name</CommandText>
               <TablixMembers>
                 <TablixMember>
                   <TablixHeader>
-                    <Size>1.29518in</Size>
+                    <Size>1.81056in</Size>
                     <CellContents>
                       <Textbox Name="Textbox10">
                         <CanGrow>true</CanGrow>
@@ -490,12 +503,15 @@ ORDER BY ST.Name</CommandText>
                               <TextRun>
                                 <Value>Sales Territory</Value>
                                 <Style>
+                                  <FontSize>14pt</FontSize>
                                   <FontWeight>Bold</FontWeight>
                                   <Color>White</Color>
                                 </Style>
                               </TextRun>
                             </TextRuns>
-                            <Style />
+                            <Style>
+                              <TextAlign>Center</TextAlign>
+                            </Style>
                           </Paragraph>
                         </Paragraphs>
                         <rd:DefaultName>Textbox10</rd:DefaultName>
@@ -505,19 +521,19 @@ ORDER BY ST.Name</CommandText>
                             <Style>Solid</Style>
                           </Border>
                           <BackgroundColor>Tomato</BackgroundColor>
+                          <VerticalAlign>Middle</VerticalAlign>
                           <PaddingLeft>2pt</PaddingLeft>
                           <PaddingRight>2pt</PaddingRight>
                           <PaddingTop>2pt</PaddingTop>
                           <PaddingBottom>2pt</PaddingBottom>
                         </Style>
                       </Textbox>
-                      <rd:Selected>true</rd:Selected>
                     </CellContents>
                   </TablixHeader>
                   <TablixMembers>
                     <TablixMember>
                       <TablixHeader>
-                        <Size>1.79518in</Size>
+                        <Size>2.31056in</Size>
                         <CellContents>
                           <Textbox Name="Textbox15">
                             <CanGrow>true</CanGrow>
@@ -528,12 +544,15 @@ ORDER BY ST.Name</CommandText>
                                   <TextRun>
                                     <Value>Sales Person</Value>
                                     <Style>
+                                      <FontSize>14pt</FontSize>
                                       <FontWeight>Bold</FontWeight>
                                       <Color>White</Color>
                                     </Style>
                                   </TextRun>
                                 </TextRuns>
-                                <Style />
+                                <Style>
+                                  <TextAlign>Center</TextAlign>
+                                </Style>
                               </Paragraph>
                             </Paragraphs>
                             <rd:DefaultName>Textbox15</rd:DefaultName>
@@ -543,13 +562,13 @@ ORDER BY ST.Name</CommandText>
                                 <Style>Solid</Style>
                               </Border>
                               <BackgroundColor>Tomato</BackgroundColor>
+                              <VerticalAlign>Middle</VerticalAlign>
                               <PaddingLeft>2pt</PaddingLeft>
                               <PaddingRight>2pt</PaddingRight>
                               <PaddingTop>2pt</PaddingTop>
                               <PaddingBottom>2pt</PaddingBottom>
                             </Style>
                           </Textbox>
-                          <rd:Selected>true</rd:Selected>
                         </CellContents>
                       </TablixHeader>
                       <TablixMembers>
@@ -571,7 +590,7 @@ ORDER BY ST.Name</CommandText>
                     </SortExpression>
                   </SortExpressions>
                   <TablixHeader>
-                    <Size>1.29518in</Size>
+                    <Size>1.81056in</Size>
                     <CellContents>
                       <Textbox Name="SalesTerritory">
                         <CanGrow>true</CanGrow>
@@ -581,7 +600,9 @@ ORDER BY ST.Name</CommandText>
                             <TextRuns>
                               <TextRun>
                                 <Value>=Fields!SalesTerritory.Value</Value>
-                                <Style />
+                                <Style>
+                                  <FontSize>12pt</FontSize>
+                                </Style>
                               </TextRun>
                             </TextRuns>
                             <Style />
@@ -604,7 +625,7 @@ ORDER BY ST.Name</CommandText>
                   <TablixMembers>
                     <TablixMember>
                       <TablixHeader>
-                        <Size>1.79518in</Size>
+                        <Size>2.31056in</Size>
                         <CellContents>
                           <Textbox Name="Textbox21">
                             <CanGrow>true</CanGrow>
@@ -614,7 +635,9 @@ ORDER BY ST.Name</CommandText>
                                 <TextRuns>
                                   <TextRun>
                                     <Value />
-                                    <Style />
+                                    <Style>
+                                      <FontSize>12pt</FontSize>
+                                    </Style>
                                   </TextRun>
                                 </TextRuns>
                                 <Style />
@@ -652,7 +675,7 @@ ORDER BY ST.Name</CommandText>
                       <TablixMembers>
                         <TablixMember>
                           <TablixHeader>
-                            <Size>1.79518in</Size>
+                            <Size>2.31056in</Size>
                             <CellContents>
                               <Textbox Name="SalesPerson">
                                 <CanGrow>true</CanGrow>
@@ -662,15 +685,21 @@ ORDER BY ST.Name</CommandText>
                                     <TextRuns>
                                       <TextRun>
                                         <Value>=Fields!FirstName.Value</Value>
-                                        <Style />
+                                        <Style>
+                                          <FontSize>12pt</FontSize>
+                                        </Style>
                                       </TextRun>
                                       <TextRun>
                                         <Value xml:space="preserve"> </Value>
-                                        <Style />
+                                        <Style>
+                                          <FontSize>12pt</FontSize>
+                                        </Style>
                                       </TextRun>
                                       <TextRun>
                                         <Value>=Fields!LastName.Value</Value>
-                                        <Style />
+                                        <Style>
+                                          <FontSize>12pt</FontSize>
+                                        </Style>
                                       </TextRun>
                                     </TextRuns>
                                     <Style />
@@ -734,10 +763,10 @@ ORDER BY ST.Name</CommandText>
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>TerritorySales</DataSetName>
-            <Top>1.38194in</Top>
-            <Left>0.20833in</Left>
-            <Height>1in</Height>
-            <Width>5.60086in</Width>
+            <Top>1.72916in</Top>
+            <Left>0.375in</Left>
+            <Height>1.31744in</Height>
+            <Width>7.66238in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -746,11 +775,31 @@ ORDER BY ST.Name</CommandText>
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>2.52777in</Height>
+        <Height>11in</Height>
         <Style />
       </Body>
-      <Width>6.21875in</Width>
+      <Width>8.5in</Width>
       <Page>
+        <PageHeader>
+          <Height>0.5in</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageHeader>
+        <PageFooter>
+          <Height>0.5in</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageFooter>
         <LeftMargin>1.25in</LeftMargin>
         <RightMargin>1.25in</RightMargin>
         <TopMargin>1in</TopMargin>

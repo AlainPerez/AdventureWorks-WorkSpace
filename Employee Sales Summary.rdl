@@ -10,7 +10,7 @@
       <am:Name>SSDTRS</am:Name>
       <am:Version>17.11.35222.181</am:Version>
     </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2024-09-05T22:06:07.0566916Z</am:LastModifiedTimestamp>
+    <am:LastModifiedTimestamp>2024-09-07T21:54:48.8786576Z</am:LastModifiedTimestamp>
   </am:AuthoringMetadata>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -175,7 +175,7 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
                       <FontFamily>Tahoma</FontFamily>
                       <FontSize>16pt</FontSize>
                       <FontWeight>Bold</FontWeight>
-                      <Color>DarkSlateBlue</Color>
+                      <Color>Red</Color>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -185,10 +185,15 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
               </Paragraph>
             </Paragraphs>
             <Top>0.125in</Top>
-            <Left>0.125in</Left>
+            <Left>1.125in</Left>
             <Height>0.375in</Height>
             <Width>4.375in</Width>
-            <Style />
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <BackgroundColor>CornflowerBlue</BackgroundColor>
+            </Style>
           </Textbox>
           <Textbox Name="TitleEmployee">
             <KeepTogether>true</KeepTogether>
@@ -196,43 +201,38 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Employee: </Value>
+                    <Value>     Employee: </Value>
                     <Style>
                       <FontFamily>Tahoma</FontFamily>
-                      <FontSize>12pt</FontSize>
-                      <Color>CornflowerBlue</Color>
+                      <FontSize>14pt</FontSize>
                     </Style>
                   </TextRun>
                   <TextRun>
                     <Value>=First(Fields!Employee.Value, "EmpSalesYearOverYear")</Value>
                     <Style>
                       <FontFamily>Tahoma</FontFamily>
-                      <FontSize>12pt</FontSize>
-                      <Color>CornflowerBlue</Color>
+                      <FontSize>14pt</FontSize>
                     </Style>
                   </TextRun>
                   <TextRun>
                     <Value>  (</Value>
                     <Style>
                       <FontFamily>Tahoma</FontFamily>
-                      <FontSize>12pt</FontSize>
-                      <Color>CornflowerBlue</Color>
+                      <FontSize>14pt</FontSize>
                     </Style>
                   </TextRun>
                   <TextRun>
                     <Value>=Parameters!EmpID.Value</Value>
                     <Style>
                       <FontFamily>Tahoma</FontFamily>
-                      <FontSize>12pt</FontSize>
-                      <Color>CornflowerBlue</Color>
+                      <FontSize>14pt</FontSize>
                     </Style>
                   </TextRun>
                   <TextRun>
                     <Value>)</Value>
                     <Style>
                       <FontFamily>Tahoma</FontFamily>
-                      <FontSize>12pt</FontSize>
-                      <Color>CornflowerBlue</Color>
+                      <FontSize>14pt</FontSize>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -240,7 +240,7 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
               </Paragraph>
             </Paragraphs>
             <Top>0.5in</Top>
-            <Left>0.125in</Left>
+            <Left>1in</Left>
             <Height>0.375in</Height>
             <Width>4.375in</Width>
             <ZIndex>1</ZIndex>
@@ -250,18 +250,18 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>1.125in</Width>
+                  <Width>1.65772in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>3.625in</Width>
+                  <Width>4.15772in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.125in</Width>
+                  <Width>1.65772in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>0.375in</Height>
+                  <Height>0.47774in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -274,7 +274,7 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
                                   <Value>=MonthName(Parameters!ReportMonth.Value) &amp; " " &amp; Parameters!ReportYear.Value &amp; " Order Summary"</Value>
                                   <Style>
                                     <FontFamily />
-                                    <FontSize>12pt</FontSize>
+                                    <FontSize>14pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -287,7 +287,12 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
                           </Paragraphs>
                           <ZIndex>12</ZIndex>
                           <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
                             <FontFamily />
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -302,7 +307,7 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.25in</Height>
+                  <Height>0.35274in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -315,18 +320,22 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
                                   <Value>Order Number</Value>
                                   <Style>
                                     <FontFamily />
+                                    <FontSize>14pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Color>White</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <ZIndex>11</ZIndex>
                           <Style>
                             <BackgroundColor>Blue</BackgroundColor>
                             <FontFamily />
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -346,18 +355,22 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
                                   <Value>Product Category</Value>
                                   <Style>
                                     <FontFamily />
+                                    <FontSize>14pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Color>White</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <ZIndex>10</ZIndex>
                           <Style>
                             <BackgroundColor>Blue</BackgroundColor>
                             <FontFamily />
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -377,6 +390,7 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
                                   <Value>Sales</Value>
                                   <Style>
                                     <FontFamily />
+                                    <FontSize>14pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Color>White</Color>
                                   </Style>
@@ -384,7 +398,7 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
                               </TextRuns>
                               <Style>
                                 <FontFamily />
-                                <TextAlign>Right</TextAlign>
+                                <TextAlign>Center</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
@@ -392,6 +406,7 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
                           <Style>
                             <BackgroundColor>Blue</BackgroundColor>
                             <FontFamily />
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -403,7 +418,7 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.25in</Height>
+                  <Height>0.35274in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -416,6 +431,8 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
                                 <TextRun>
                                   <Value>=Fields!SalesOrderNumber.Value</Value>
                                   <Style>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
                                     <TextDecoration>Underline</TextDecoration>
                                     <Color>SteelBlue</Color>
                                   </Style>
@@ -440,6 +457,9 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
                           </ActionInfo>
                           <ZIndex>2</ZIndex>
                           <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -457,7 +477,9 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!ProdCat.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontSize>12pt</FontSize>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -483,6 +505,7 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
                                 <TextRun>
                                   <Value>=Sum(Fields!Sales.Value)</Value>
                                   <Style>
+                                    <FontSize>12pt</FontSize>
                                     <Format>c</Format>
                                   </Style>
                                 </TextRun>
@@ -504,7 +527,7 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.25in</Height>
+                  <Height>0.35274in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -517,6 +540,7 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
                                   <Value />
                                   <Style>
                                     <FontFamily />
+                                    <FontSize>12pt</FontSize>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -551,6 +575,7 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
                                   <Value />
                                   <Style>
                                     <FontFamily />
+                                    <FontSize>12pt</FontSize>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -585,6 +610,8 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
                                   <Value>=Sum(Fields!Sales.Value)</Value>
                                   <Style>
                                     <FontFamily />
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
                                     <Format>c</Format>
                                   </Style>
                                 </TextRun>
@@ -619,7 +646,7 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.25in</Height>
+                  <Height>0.35274in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -632,6 +659,7 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
                                   <Value>Total</Value>
                                   <Style>
                                     <FontFamily />
+                                    <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Color>Tomato</Color>
                                   </Style>
@@ -665,6 +693,7 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
                                   <Value />
                                   <Style>
                                     <FontFamily />
+                                    <FontSize>12pt</FontSize>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -696,6 +725,7 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
                                   <Value>=Sum(Fields!Sales.Value)</Value>
                                   <Style>
                                     <FontFamily />
+                                    <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Format>c</Format>
                                     <Color>Tomato</Color>
@@ -785,10 +815,10 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
             <FixedRowHeaders>true</FixedRowHeaders>
             <NoRowsMessage>No data found for Current Month Order Summary table.</NoRowsMessage>
             <DataSetName>EmpSalesDetail</DataSetName>
-            <Top>4.40277in</Top>
-            <Left>0.125in</Left>
-            <Height>1.375in</Height>
-            <Width>5.875in</Width>
+            <Top>5.66799in</Top>
+            <Left>0.496in</Left>
+            <Height>1.8887in</Height>
+            <Width>7.47316in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -804,10 +834,10 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
             <Value>logopart</Value>
             <MIMEType>image/jpeg</MIMEType>
             <Sizing>Fit</Sizing>
-            <Top>0.125in</Top>
-            <Left>5.20833in</Left>
-            <Height>0.375in</Height>
-            <Width>0.79167in</Width>
+            <Top>0.18056in</Top>
+            <Left>6.31145in</Left>
+            <Height>0.69444in</Height>
+            <Width>1.65772in</Width>
             <ZIndex>3</ZIndex>
             <Style />
           </Image>
@@ -934,6 +964,7 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
                     <Maximum>NaN</Maximum>
                     <PreventFontShrink>true</PreventFontShrink>
                     <PreventFontGrow>true</PreventFontGrow>
+                    <AllowLabelRotation>Rotate30</AllowLabelRotation>
                     <IncludeZero>false</IncludeZero>
                     <ChartAxisScaleBreak>
                       <Style />
@@ -965,6 +996,7 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
                         <Style>None</Style>
                         <Width>0.75pt</Width>
                       </Border>
+                      <FontSize>11pt</FontSize>
                       <Format>C</Format>
                     </Style>
                     <ChartAxisTitle>
@@ -1003,6 +1035,7 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
                     <PreventFontShrink>true</PreventFontShrink>
                     <PreventFontGrow>true</PreventFontGrow>
                     <IncludeZero>false</IncludeZero>
+                    <LabelsAutoFitDisabled>true</LabelsAutoFitDisabled>
                     <ChartAxisScaleBreak>
                       <Style />
                     </ChartAxisScaleBreak>
@@ -1049,6 +1082,7 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
                     <Style>Solid</Style>
                     <Width>0.75pt</Width>
                   </Border>
+                  <FontSize>12pt</FontSize>
                 </Style>
                 <Position>BottomCenter</Position>
                 <Layout>Row</Layout>
@@ -1092,10 +1126,10 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
               </Style>
             </ChartNoDataMessage>
             <DataSetName>EmpSalesYearOverYear</DataSetName>
-            <Top>0.88889in</Top>
-            <Left>0.125in</Left>
-            <Height>3.25in</Height>
-            <Width>5.875in</Width>
+            <Top>1.16628in</Top>
+            <Left>0.32477in</Left>
+            <Height>3.74467in</Height>
+            <Width>7.47317in</Width>
             <ZIndex>4</ZIndex>
             <CustomProperties>
               <CustomProperty>
@@ -1115,11 +1149,31 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
             </Style>
           </Chart>
         </ReportItems>
-        <Height>6.25222in</Height>
+        <Height>11in</Height>
         <Style />
       </Body>
-      <Width>6.13194in</Width>
+      <Width>8.5in</Width>
       <Page>
+        <PageHeader>
+          <Height>0.4472in</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageHeader>
+        <PageFooter>
+          <Height>0.5in</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageFooter>
         <LeftMargin>0.75in</LeftMargin>
         <RightMargin>0.75in</RightMargin>
         <TopMargin>0.5in</TopMargin>

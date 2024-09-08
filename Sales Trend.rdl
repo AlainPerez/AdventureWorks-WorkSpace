@@ -8,9 +8,9 @@
     </am:CreatedBy>
     <am:UpdatedBy>
       <am:Name>SSDTRS</am:Name>
-      <am:Version>17.10.35122.118</am:Version>
+      <am:Version>17.11.35222.181</am:Version>
     </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2024-09-05T15:44:09.2838150Z</am:LastModifiedTimestamp>
+    <am:LastModifiedTimestamp>2024-09-07T21:50:57.9375726Z</am:LastModifiedTimestamp>
   </am:AuthoringMetadata>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -99,7 +99,7 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
                               <TextRun>
                                 <Value>Products by </Value>
                                 <Style>
-                                  <FontSize>11pt</FontSize>
+                                  <FontSize>12pt</FontSize>
                                   <FontWeight>Bold</FontWeight>
                                 </Style>
                               </TextRun>
@@ -114,14 +114,14 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
                                 <Value>Subcategory, Quarter </Value>
                                 <Style>
                                   <FontStyle>Italic</FontStyle>
-                                  <FontSize>11pt</FontSize>
+                                  <FontSize>12pt</FontSize>
                                   <FontWeight>Bold</FontWeight>
                                 </Style>
                               </TextRun>
                               <TextRun>
                                 <Value>&amp; </Value>
                                 <Style>
-                                  <FontSize>11pt</FontSize>
+                                  <FontSize>12pt</FontSize>
                                   <FontWeight>Bold</FontWeight>
                                 </Style>
                               </TextRun>
@@ -129,7 +129,7 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
                                 <Value>Trend</Value>
                                 <Style>
                                   <FontStyle>Italic</FontStyle>
-                                  <FontSize>11pt</FontSize>
+                                  <FontSize>12pt</FontSize>
                                   <FontWeight>Bold</FontWeight>
                                 </Style>
                               </TextRun>
@@ -166,16 +166,16 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>0.76042in</Width>
+                  <Width>1.20139in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.79167in</Width>
+                  <Width>1.23264in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.67708in</Width>
+                  <Width>1.11805in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.17708in</Width>
+                  <Width>0.61805in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -192,7 +192,7 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
                                 <TextRun>
                                   <Value>=Sum(Fields!Sales.Value)</Value>
                                   <Style>
-                                    <FontSize>8pt</FontSize>
+                                    <FontSize>11pt</FontSize>
                                     <Format>C0</Format>
                                     <TextDecoration>Underline</TextDecoration>
                                     <Color>Blue</Color>
@@ -249,7 +249,7 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
                                 <TextRun>
                                   <Value>=Sum(Fields!Sales.Value)</Value>
                                   <Style>
-                                    <FontSize>8pt</FontSize>
+                                    <FontSize>11pt</FontSize>
                                     <Format>C0</Format>
                                   </Style>
                                 </TextRun>
@@ -281,7 +281,7 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
                                   <Label>Growth</Label>
                                   <Value>=Code.GetGrowthValue(Previous(Sum(Fields!Sales.Value), "OrderYear"), Sum(Fields!Sales.Value))</Value>
                                   <Style>
-                                    <FontSize>9pt</FontSize>
+                                    <FontSize>11pt</FontSize>
                                     <Format>P0</Format>
                                   </Style>
                                 </TextRun>
@@ -346,7 +346,7 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
                                 <TextRun>
                                   <Value>=Sum(Fields!Sales.Value)</Value>
                                   <Style>
-                                    <FontSize>8pt</FontSize>
+                                    <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Format>C0</Format>
                                     <TextDecoration>None</TextDecoration>
@@ -363,7 +363,7 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
                             <Border>
                               <Style>Solid</Style>
                             </Border>
-                            <BackgroundColor>LightSteelBlue</BackgroundColor>
+                            <BackgroundColor>Tomato</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingRight>2pt</PaddingRight>
                           </Style>
@@ -381,7 +381,7 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
                                 <TextRun>
                                   <Value>=Sum(Fields!Sales.Value)</Value>
                                   <Style>
-                                    <FontSize>8pt</FontSize>
+                                    <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Format>C0</Format>
                                   </Style>
@@ -397,7 +397,7 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
                             <Border>
                               <Style>Solid</Style>
                             </Border>
-                            <BackgroundColor>LightSteelBlue</BackgroundColor>
+                            <BackgroundColor>Tomato</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingRight>2pt</PaddingRight>
                           </Style>
@@ -415,7 +415,7 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
                                 <TextRun>
                                   <Value />
                                   <Style>
-                                    <FontSize>8pt</FontSize>
+                                    <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <TextDecoration>None</TextDecoration>
                                   </Style>
@@ -431,7 +431,7 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
                             <Border>
                               <Style>Solid</Style>
                             </Border>
-                            <BackgroundColor>LightSteelBlue</BackgroundColor>
+                            <BackgroundColor>Tomato</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingRight>2pt</PaddingRight>
                           </Style>
@@ -449,6 +449,7 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
                                 <TextRun>
                                   <Value />
                                   <Style>
+                                    <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -461,7 +462,7 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
                             <Border>
                               <Style>None</Style>
                             </Border>
-                            <BackgroundColor>LightSteelBlue</BackgroundColor>
+                            <BackgroundColor>Tomato</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -501,6 +502,7 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
                                   <TextRun>
                                     <Value>=Fields!OrderYear.Value</Value>
                                     <Style>
+                                      <FontSize>12pt</FontSize>
                                       <FontWeight>Bold</FontWeight>
                                     </Style>
                                   </TextRun>
@@ -584,7 +586,7 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
                                   <Paragraph>
                                     <TextRuns>
                                       <TextRun>
-                                        <Value>Total</Value>
+                                        <Value>SubTotal</Value>
                                         <Style>
                                           <FontWeight>Bold</FontWeight>
                                           <Color>White</Color>
@@ -712,7 +714,7 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
                     </SortExpression>
                   </SortExpressions>
                   <TablixHeader>
-                    <Size>1.19444in</Size>
+                    <Size>1.63541in</Size>
                     <CellContents>
                       <Textbox Name="Category">
                         <KeepTogether>true</KeepTogether>
@@ -722,6 +724,7 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
                               <TextRun>
                                 <Value>=Fields!Category.Value</Value>
                                 <Style>
+                                  <FontSize>11pt</FontSize>
                                   <FontWeight>Bold</FontWeight>
                                 </Style>
                               </TextRun>
@@ -753,7 +756,7 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
                         </SortExpression>
                       </SortExpressions>
                       <TablixHeader>
-                        <Size>1.33681in</Size>
+                        <Size>1.77778in</Size>
                         <CellContents>
                           <Textbox Name="SubCategory">
                             <KeepTogether>true</KeepTogether>
@@ -763,6 +766,7 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
                                   <TextRun>
                                     <Value>=Fields!Subcategory.Value</Value>
                                     <Style>
+                                      <FontSize>11pt</FontSize>
                                       <FontWeight>Bold</FontWeight>
                                     </Style>
                                   </TextRun>
@@ -792,7 +796,7 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
                 </TablixMember>
                 <TablixMember>
                   <TablixHeader>
-                    <Size>1.19444in</Size>
+                    <Size>1.63541in</Size>
                     <CellContents>
                       <Textbox Name="Textbox2">
                         <CanGrow>true</CanGrow>
@@ -803,6 +807,7 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
                               <TextRun>
                                 <Value>Total</Value>
                                 <Style>
+                                  <FontSize>12pt</FontSize>
                                   <FontWeight>Bold</FontWeight>
                                 </Style>
                               </TextRun>
@@ -815,7 +820,7 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
                           <Border>
                             <Style>Solid</Style>
                           </Border>
-                          <BackgroundColor>LightSteelBlue</BackgroundColor>
+                          <BackgroundColor>Tomato</BackgroundColor>
                           <PaddingLeft>2pt</PaddingLeft>
                           <PaddingRight>2pt</PaddingRight>
                         </Style>
@@ -825,7 +830,7 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
                   <TablixMembers>
                     <TablixMember>
                       <TablixHeader>
-                        <Size>1.33681in</Size>
+                        <Size>1.77778in</Size>
                         <CellContents>
                           <Textbox Name="Textbox3">
                             <CanGrow>true</CanGrow>
@@ -836,6 +841,7 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
                                   <TextRun>
                                     <Value />
                                     <Style>
+                                      <FontSize>12pt</FontSize>
                                       <FontWeight>Bold</FontWeight>
                                     </Style>
                                   </TextRun>
@@ -848,7 +854,7 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
                               <Border>
                                 <Style>Solid</Style>
                               </Border>
-                              <BackgroundColor>LightSteelBlue</BackgroundColor>
+                              <BackgroundColor>Tomato</BackgroundColor>
                               <PaddingLeft>2pt</PaddingLeft>
                               <PaddingRight>2pt</PaddingRight>
                             </Style>
@@ -864,10 +870,10 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
             <RepeatColumnHeaders>true</RepeatColumnHeaders>
             <RepeatRowHeaders>true</RepeatRowHeaders>
             <DataSetName>Sales</DataSetName>
-            <Top>0.97917in</Top>
-            <Left>0.0625in</Left>
+            <Top>1.22917in</Top>
+            <Left>0.4375in</Left>
             <Height>1.13542in</Height>
-            <Width>4.9375in</Width>
+            <Width>7.58332in</Width>
             <Style>
               <Border>
                 <Style>Solid</Style>
@@ -896,7 +902,7 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
             </Paragraphs>
             <Top>0.0625in</Top>
             <Left>2.07986in</Left>
-            <Height>0.78125in</Height>
+            <Height>0.63542in</Height>
             <Width>4.48959in</Width>
             <ZIndex>1</ZIndex>
             <Style>
@@ -910,9 +916,9 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
             <Value>logopart</Value>
             <Sizing>FitProportional</Sizing>
             <Top>0.0625in</Top>
-            <Left>0.0625in</Left>
-            <Height>0.63542in</Height>
-            <Width>1.19444in</Width>
+            <Left>0.1875in</Left>
+            <Height>0.91667in</Height>
+            <Width>1.64583in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -921,52 +927,15 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
             </Style>
           </Image>
         </ReportItems>
-        <Height>2.12167in</Height>
+        <Height>11in</Height>
         <Style />
       </Body>
-      <Width>6.67375in</Width>
+      <Width>8.5in</Width>
       <Page>
         <PageHeader>
           <Height>0.30208in</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
-          <ReportItems>
-            <Textbox Name="ReportName">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>=Globals!ReportName</Value>
-                      <Style>
-                        <FontStyle>Italic</FontStyle>
-                        <FontSize>9pt</FontSize>
-                        <Color>SteelBlue</Color>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style>
-                    <TextAlign>Right</TextAlign>
-                  </Style>
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>ReportName</rd:DefaultName>
-              <Top>0.01042in</Top>
-              <Left>4.29862in</Left>
-              <Height>0.25in</Height>
-              <Width>2.27083in</Width>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
-              </Style>
-            </Textbox>
-          </ReportItems>
           <Style>
             <Border>
               <Style>None</Style>
@@ -974,37 +943,31 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
           </Style>
         </PageHeader>
         <PageFooter>
-          <Height>1.04166in</Height>
+          <Height>0.38403in</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
-            <Textbox Name="Textbox1">
+            <Textbox Name="PageNumber">
               <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
               <Paragraphs>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>AdventureWorks sales trend analysis comparing year-over-year (Y/Y) growth by product category and subcategory. This report showcases features such as a Tablix with conditionally hidden static columns, repeating headers, KeepTogether settings, and the Previous function for calculating Y/Y trends. It also includes custom code, conditional formatting for fonts and background colors, KPI images, and drillthrough parameters.</Value>
-                      <Style>
-                        <FontStyle>Normal</FontStyle>
-                        <FontWeight>Normal</FontWeight>
-                        <TextDecoration>None</TextDecoration>
-                        <Color>#000000</Color>
-                      </Style>
+                      <Value>=Globals!PageNumber</Value>
+                      <Style />
                     </TextRun>
                   </TextRuns>
-                  <Style />
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
                 </Paragraph>
               </Paragraphs>
-              <rd:DefaultName>Textbox1</rd:DefaultName>
+              <rd:DefaultName>PageNumber</rd:DefaultName>
               <Top>0.06944in</Top>
-              <Left>0.0625in</Left>
-              <Height>0.92014in</Height>
-              <Width>6.38542in</Width>
-              <Visibility>
-                <Hidden>=NOT Parameters!ShowDescription.Value</Hidden>
-              </Visibility>
+              <Left>5.56945in</Left>
+              <Height>0.25in</Height>
+              <Width>1in</Width>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -1030,29 +993,10 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
       </Page>
     </ReportSection>
   </ReportSections>
-  <ReportParameters>
-    <ReportParameter Name="ShowDescription">
-      <DataType>Boolean</DataType>
-      <DefaultValue>
-        <Values>
-          <Value>false</Value>
-        </Values>
-      </DefaultValue>
-      <Prompt>ShowDescription</Prompt>
-      <Hidden>true</Hidden>
-    </ReportParameter>
-  </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
       <NumberOfColumns>1</NumberOfColumns>
       <NumberOfRows>1</NumberOfRows>
-      <CellDefinitions>
-        <CellDefinition>
-          <ColumnIndex>0</ColumnIndex>
-          <RowIndex>0</RowIndex>
-          <ParameterName>ShowDescription</ParameterName>
-        </CellDefinition>
-      </CellDefinitions>
     </GridLayoutDefinition>
   </ReportParametersLayout>
   <Code>Public Function GetStartDateForQuarter(ByVal quarter As String) As String

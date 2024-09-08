@@ -10,7 +10,7 @@
       <am:Name>SSDTRS</am:Name>
       <am:Version>17.11.35222.181</am:Version>
     </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2024-09-05T19:08:11.8412582Z</am:LastModifiedTimestamp>
+    <am:LastModifiedTimestamp>2024-09-07T22:16:06.9384730Z</am:LastModifiedTimestamp>
   </am:AuthoringMetadata>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -265,7 +265,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                               </TextRuns>
                               <Style>
                                 <FontFamily />
-                                <TextAlign>Left</TextAlign>
+                                <TextAlign>Center</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
@@ -305,7 +305,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                               </TextRuns>
                               <Style>
                                 <FontFamily />
-                                <TextAlign>Left</TextAlign>
+                                <TextAlign>Center</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
@@ -343,7 +343,9 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <ZIndex>24</ZIndex>
@@ -380,7 +382,9 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <ZIndex>23</ZIndex>
@@ -417,7 +421,9 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <ZIndex>22</ZIndex>
@@ -1270,7 +1276,7 @@ ORDER BY    SOD.SalesOrderDetailID</CommandText>
             <Top>3.5in</Top>
             <Left>0.375in</Left>
             <Height>0.5625in</Height>
-            <Width>7.88542in</Width>
+            <Width>7.88539in</Width>
             <Style>
               <FontSize>9pt</FontSize>
             </Style>

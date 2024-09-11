@@ -10,7 +10,7 @@
       <am:Name>SSDTRS</am:Name>
       <am:Version>17.11.35222.181</am:Version>
     </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2024-09-08T17:37:28.6460185Z</am:LastModifiedTimestamp>
+    <am:LastModifiedTimestamp>2024-09-08T23:50:56.6138148Z</am:LastModifiedTimestamp>
   </am:AuthoringMetadata>
   <Author>Mary Lingel MSFT</Author>
   <AutoRefresh>0</AutoRefresh>
@@ -134,7 +134,8 @@ FROM Sales.Store s</CommandText>
                               <Color>LightGrey</Color>
                               <Style>None</Style>
                             </Border>
-                            <BackgroundColor>LightGreen</BackgroundColor>
+                            <BackgroundColor>LimeGreen</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -171,7 +172,8 @@ FROM Sales.Store s</CommandText>
                               <Color>LightGrey</Color>
                               <Style>None</Style>
                             </Border>
-                            <BackgroundColor>LightGreen</BackgroundColor>
+                            <BackgroundColor>LimeGreen</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -208,13 +210,15 @@ FROM Sales.Store s</CommandText>
                               <Color>LightGrey</Color>
                               <Style>None</Style>
                             </Border>
-                            <BackgroundColor>LightGreen</BackgroundColor>
+                            <BackgroundColor>LimeGreen</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                   </TablixCells>
@@ -243,7 +247,9 @@ FROM Sales.Store s</CommandText>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>FirstName</rd:DefaultName>
@@ -252,6 +258,7 @@ FROM Sales.Store s</CommandText>
                               <Color>LightGrey</Color>
                               <Style>None</Style>
                             </Border>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -273,7 +280,9 @@ FROM Sales.Store s</CommandText>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Title</rd:DefaultName>
@@ -282,6 +291,7 @@ FROM Sales.Store s</CommandText>
                               <Color>LightGrey</Color>
                               <Style>None</Style>
                             </Border>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -303,7 +313,9 @@ FROM Sales.Store s</CommandText>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>PhoneNumber</rd:DefaultName>
@@ -312,6 +324,7 @@ FROM Sales.Store s</CommandText>
                               <Color>LightGrey</Color>
                               <Style>None</Style>
                             </Border>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -388,7 +401,7 @@ FROM Sales.Store s</CommandText>
                         <FontStyle>Normal</FontStyle>
                         <FontSize>12pt</FontSize>
                         <FontWeight>Bold</FontWeight>
-                        <Color>#00ffffff</Color>
+                        <Color>White</Color>
                       </Style>
                     </TextRun>
                     <TextRun>
@@ -397,7 +410,7 @@ FROM Sales.Store s</CommandText>
                         <FontStyle>Normal</FontStyle>
                         <FontSize>12pt</FontSize>
                         <FontWeight>Bold</FontWeight>
-                        <Color>#00ffffff</Color>
+                        <Color>White</Color>
                       </Style>
                     </TextRun>
                   </TextRuns>

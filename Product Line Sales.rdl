@@ -10,7 +10,7 @@
       <am:Name>SSDTRS</am:Name>
       <am:Version>17.11.35222.181</am:Version>
     </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2024-09-08T14:21:59.8016422Z</am:LastModifiedTimestamp>
+    <am:LastModifiedTimestamp>2024-09-08T23:50:34.4513249Z</am:LastModifiedTimestamp>
   </am:AuthoringMetadata>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -369,7 +369,7 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
                   </TablixMembers>
                 </TablixRowHierarchy>
                 <DataSetName>TopEmployees</DataSetName>
-                <Top>0.125in</Top>
+                <Top>0.17219in</Top>
                 <Left>0.15972in</Left>
                 <Height>0.5in</Height>
                 <Width>3.1875in</Width>
@@ -684,6 +684,7 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
                   </Style>
                 </ChartNoDataMessage>
                 <DataSetName>TopEmployees</DataSetName>
+                <Top>0.04719in</Top>
                 <Left>3.41666in</Left>
                 <Height>2.3125in</Height>
                 <Width>4.01736in</Width>
@@ -700,9 +701,9 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
               </Chart>
             </ReportItems>
             <DataElementOutput>ContentsOnly</DataElementOutput>
-            <Top>2.375in</Top>
+            <Top>2.20281in</Top>
             <Left>0.43403in</Left>
-            <Height>2.4375in</Height>
+            <Height>2.35969in</Height>
             <Width>7.43402in</Width>
             <Style />
           </Rectangle>
@@ -778,9 +779,9 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
                 </Style>
               </Paragraph>
             </Paragraphs>
-            <Top>1.22916in</Top>
+            <Top>1.10416in</Top>
             <Left>0.59375in</Left>
-            <Height>0.61806in</Height>
+            <Height>0.53456in</Height>
             <Width>7.2743in</Width>
             <ZIndex>1</ZIndex>
             <Style>
@@ -806,7 +807,7 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
             <DataElementOutput>ContentsOnly</DataElementOutput>
             <Top>1in</Top>
             <Left>0.21875in</Left>
-            <Height>0.15972in</Height>
+            <Height>0.03422in</Height>
             <Width>7.9712in</Width>
             <ZIndex>3</ZIndex>
             <Style>
@@ -822,7 +823,7 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
                   <TextRun>
                     <Value>Top 5 Employees by Sales</Value>
                     <Style>
-                      <FontSize>12pt</FontSize>
+                      <FontSize>14pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                       <Color>White</Color>
                     </Style>
@@ -833,10 +834,10 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
                 </Style>
               </Paragraph>
             </Paragraphs>
-            <Top>2.125in</Top>
+            <Top>1.83317in</Top>
             <Left>0.43403in</Left>
-            <Height>0.25in</Height>
-            <Width>7.45139in</Width>
+            <Height>0.3002in</Height>
+            <Width>7.61315in</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>
@@ -856,26 +857,28 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
                       <TextRun>
                         <Value>Top 5 Stores by Sales</Value>
                         <Style>
-                          <FontSize>12pt</FontSize>
+                          <FontSize>14pt</FontSize>
                           <FontWeight>Bold</FontWeight>
                           <Color>White</Color>
                         </Style>
                       </TextRun>
                     </TextRuns>
                     <Style>
+                      <TextAlign>Left</TextAlign>
                       <LineHeight>22pt</LineHeight>
                     </Style>
                   </Paragraph>
                 </Paragraphs>
-                <Top>0.25in</Top>
+                <Top>0.06785in</Top>
                 <Left>0.22222in</Left>
-                <Height>0.25in</Height>
-                <Width>7.57968in</Width>
+                <Height>0.3002in</Height>
+                <Width>7.61315in</Width>
                 <Style>
                   <Border>
                     <Color>#000000</Color>
                   </Border>
-                  <BackgroundColor>Black</BackgroundColor>
+                  <BackgroundColor>LimeGreen</BackgroundColor>
+                  <VerticalAlign>Middle</VerticalAlign>
                   <PaddingLeft>6pt</PaddingLeft>
                 </Style>
               </Textbox>
@@ -1165,10 +1168,10 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
                   </Style>
                 </ChartNoDataMessage>
                 <DataSetName>TopCustomerStores</DataSetName>
-                <Top>0.51389in</Top>
+                <Top>0.38195in</Top>
                 <Left>3.60417in</Left>
-                <Height>3.875in</Height>
-                <Width>4.37397in</Width>
+                <Height>3.54431in</Height>
+                <Width>4.50481in</Width>
                 <ZIndex>1</ZIndex>
                 <CustomProperties>
                   <CustomProperty>
@@ -1227,6 +1230,7 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
                                   <Style>None</Style>
                                 </Border>
                                 <BackgroundColor>SteelBlue</BackgroundColor>
+                                <VerticalAlign>Middle</VerticalAlign>
                                 <PaddingLeft>2pt</PaddingLeft>
                                 <PaddingRight>2pt</PaddingRight>
                                 <PaddingTop>2pt</PaddingTop>
@@ -1269,6 +1273,7 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
                                   <Style>None</Style>
                                 </Border>
                                 <BackgroundColor>SteelBlue</BackgroundColor>
+                                <VerticalAlign>Middle</VerticalAlign>
                                 <PaddingLeft>2pt</PaddingLeft>
                                 <PaddingRight>2pt</PaddingRight>
                                 <PaddingTop>2pt</PaddingTop>
@@ -1322,6 +1327,7 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
                                   <Color>LightGrey</Color>
                                   <Style>None</Style>
                                 </Border>
+                                <VerticalAlign>Middle</VerticalAlign>
                                 <PaddingLeft>2pt</PaddingLeft>
                                 <PaddingRight>2pt</PaddingRight>
                                 <PaddingTop>2pt</PaddingTop>
@@ -1346,7 +1352,9 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
                                       </Style>
                                     </TextRun>
                                   </TextRuns>
-                                  <Style />
+                                  <Style>
+                                    <TextAlign>Right</TextAlign>
+                                  </Style>
                                 </Paragraph>
                               </Paragraphs>
                               <rd:DefaultName>SaleAmount</rd:DefaultName>
@@ -1355,6 +1363,7 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
                                   <Color>LightGrey</Color>
                                   <Style>None</Style>
                                 </Border>
+                                <VerticalAlign>Middle</VerticalAlign>
                                 <PaddingLeft>2pt</PaddingLeft>
                                 <PaddingRight>2pt</PaddingRight>
                                 <PaddingTop>2pt</PaddingTop>
@@ -1396,10 +1405,10 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
                   </TablixMembers>
                 </TablixRowHierarchy>
                 <DataSetName>TopCustomerStores</DataSetName>
-                <Top>0.63208in</Top>
+                <Top>0.50014in</Top>
                 <Left>0.22222in</Left>
                 <Height>0.5in</Height>
-                <Width>3.34723in</Width>
+                <Width>3.34722in</Width>
                 <ZIndex>2</ZIndex>
                 <Style>
                   <Border>
@@ -1651,7 +1660,7 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
                   </Style>
                 </ChartNoDataMessage>
                 <DataSetName>TopCustomerStores</DataSetName>
-                <Top>1.24306in</Top>
+                <Top>1.11112in</Top>
                 <Left>0.28819in</Left>
                 <Height>2.64583in</Height>
                 <Width>3in</Width>
@@ -1667,10 +1676,10 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
               </Chart>
             </ReportItems>
             <DataElementOutput>ContentsOnly</DataElementOutput>
-            <Top>5.25in</Top>
+            <Top>4.75694in</Top>
             <Left>0.21181in</Left>
-            <Height>4.38889in</Height>
-            <Width>7.97814in</Width>
+            <Height>4.02546in</Height>
+            <Width>8.10898in</Width>
             <ZIndex>5</ZIndex>
             <Style />
           </Rectangle>
@@ -1695,42 +1704,11 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
-            <Textbox Name="FooterDate">
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>=Globals!ExecutionTime</Value>
-                      <Style>
-                        <FontSize>11pt</FontSize>
-                        <Format>D</Format>
-                        <Color>SteelBlue</Color>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style>
-                    <TextAlign>Right</TextAlign>
-                  </Style>
-                </Paragraph>
-              </Paragraphs>
-              <Top>0.125in</Top>
-              <Left>4.69792in</Left>
-              <Height>0.25in</Height>
-              <Width>2.63542in</Width>
-              <Style>
-                <Border>
-                  <Color>#000000</Color>
-                </Border>
-                <BackgroundColor>White</BackgroundColor>
-              </Style>
-            </Textbox>
             <Line Name="line1">
               <Top>0.0625in</Top>
               <Left>0.125in</Left>
               <Height>0in</Height>
               <Width>8.19579in</Width>
-              <ZIndex>1</ZIndex>
               <Style>
                 <Border>
                   <Color>LimeGreen</Color>
@@ -1738,6 +1716,46 @@ WHERE       (ProductCategoryID = @ProductCategory)</CommandText>
                 </Border>
               </Style>
             </Line>
+            <Textbox Name="PageNumber">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Globals!PageNumber</Value>
+                      <Style />
+                    </TextRun>
+                    <TextRun>
+                      <Value>/</Value>
+                      <Style />
+                    </TextRun>
+                    <TextRun>
+                      <Value>=Globals!OverallTotalPages</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>PageNumber</rd:DefaultName>
+              <Top>0.10938in</Top>
+              <Left>2.81709in</Left>
+              <Height>0.25in</Height>
+              <Width>2.86583in</Width>
+              <ZIndex>1</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
           </ReportItems>
           <Style />
         </PageFooter>

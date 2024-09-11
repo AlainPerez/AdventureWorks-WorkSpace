@@ -10,7 +10,7 @@
       <am:Name>SSDTRS</am:Name>
       <am:Version>17.11.35222.181</am:Version>
     </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2024-09-08T23:50:56.6138148Z</am:LastModifiedTimestamp>
+    <am:LastModifiedTimestamp>2024-09-11T15:45:35.4840276Z</am:LastModifiedTimestamp>
   </am:AuthoringMetadata>
   <Author>Mary Lingel MSFT</Author>
   <AutoRefresh>0</AutoRefresh>
@@ -104,7 +104,7 @@ FROM Sales.Store s</CommandText>
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>0.25in</Height>
+                  <Height>0.21528in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -218,7 +218,6 @@ FROM Sales.Store s</CommandText>
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                   </TablixCells>
@@ -357,7 +356,7 @@ FROM Sales.Store s</CommandText>
             <DataSetName>StoreContacts</DataSetName>
             <Top>0.1875in</Top>
             <Left>0.375in</Left>
-            <Height>0.52083in</Height>
+            <Height>0.48611in</Height>
             <Width>4.6875in</Width>
             <Style>
               <Border>
@@ -366,7 +365,7 @@ FROM Sales.Store s</CommandText>
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>1.00001in</Height>
+        <Height>1in</Height>
         <Style />
       </Body>
       <Width>5.5625in</Width>
@@ -380,9 +379,10 @@ FROM Sales.Store s</CommandText>
               <Source>Embedded</Source>
               <Value>AdventureWorksLogo</Value>
               <Sizing>FitProportional</Sizing>
+              <Top>0.17361in</Top>
               <Left>0.375in</Left>
-              <Height>0.5in</Height>
-              <Width>2.13194in</Width>
+              <Height>0.36806in</Height>
+              <Width>1.45138in</Width>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -420,9 +420,9 @@ FROM Sales.Store s</CommandText>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>ReportName</rd:DefaultName>
-              <Top>0.10417in</Top>
-              <Left>2.50694in</Left>
-              <Height>0.38889in</Height>
+              <Top>0.23958in</Top>
+              <Left>2.00694in</Left>
+              <Height>0.23611in</Height>
               <Width>3.05556in</Width>
               <ZIndex>1</ZIndex>
               <Style>

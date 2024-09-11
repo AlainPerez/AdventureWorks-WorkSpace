@@ -10,7 +10,7 @@
       <am:Name>SSDTRS</am:Name>
       <am:Version>17.11.35222.181</am:Version>
     </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2024-09-08T23:50:49.7612697Z</am:LastModifiedTimestamp>
+    <am:LastModifiedTimestamp>2024-09-11T16:19:13.0232525Z</am:LastModifiedTimestamp>
   </am:AuthoringMetadata>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -175,7 +175,7 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
                   <Width>1.11805in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.61805in</Width>
+                  <Width>0.39875in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -310,6 +310,7 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
                               <Source>Embedded</Source>
                               <Value>=iif(ReportItems!Growth.Value is Nothing, "EmptyImage", IIF(ReportItems!Growth.Value &gt; 0, "UpArrowGreen", IIF(ReportItems!Growth.Value, "DownArrowRed", "NeutralBarYellow")))</Value>
                               <Sizing>Fit</Sizing>
+                              <Left>0.125in</Left>
                               <Height>0.23958in</Height>
                               <Width>0.17708in</Width>
                               <Style>
@@ -491,7 +492,7 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
                   <TablixMembers>
                     <TablixMember>
                       <TablixHeader>
-                        <Size>0.25in</Size>
+                        <Size>0.25914in</Size>
                         <CellContents>
                           <Textbox Name="Textbox7">
                             <CanGrow>true</CanGrow>
@@ -538,7 +539,7 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
                             </SortExpression>
                           </SortExpressions>
                           <TablixHeader>
-                            <Size>0.39584in</Size>
+                            <Size>0.3136in</Size>
                             <CellContents>
                               <Textbox Name="OrderQuarter">
                                 <KeepTogether>true</KeepTogether>
@@ -548,6 +549,7 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
                                       <TextRun>
                                         <Value>=Fields!OrderQtr.Value</Value>
                                         <Style>
+                                          <FontSize>12pt</FontSize>
                                           <FontWeight>Bold</FontWeight>
                                         </Style>
                                       </TextRun>
@@ -577,7 +579,7 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
                         </TablixMember>
                         <TablixMember>
                           <TablixHeader>
-                            <Size>0.39584in</Size>
+                            <Size>0.3136in</Size>
                             <CellContents>
                               <Textbox Name="Textbox400">
                                 <CanGrow>true</CanGrow>
@@ -588,6 +590,7 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
                                       <TextRun>
                                         <Value>SubTotal</Value>
                                         <Style>
+                                          <FontSize>12pt</FontSize>
                                           <FontWeight>Bold</FontWeight>
                                           <Color>White</Color>
                                         </Style>
@@ -616,7 +619,7 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
                         </TablixMember>
                         <TablixMember>
                           <TablixHeader>
-                            <Size>0.39584in</Size>
+                            <Size>0.3136in</Size>
                             <CellContents>
                               <Textbox Name="Textbox357">
                                 <CanGrow>true</CanGrow>
@@ -627,6 +630,7 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
                                       <TextRun>
                                         <Value>Y / Y %</Value>
                                         <Style>
+                                          <FontSize>12pt</FontSize>
                                           <FontWeight>Bold</FontWeight>
                                           <Color>White</Color>
                                         </Style>
@@ -657,7 +661,7 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
                         </TablixMember>
                         <TablixMember>
                           <TablixHeader>
-                            <Size>0.39584in</Size>
+                            <Size>0.3136in</Size>
                             <CellContents>
                               <Textbox Name="Textbox5">
                                 <CanGrow>true</CanGrow>
@@ -871,9 +875,9 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
             <RepeatRowHeaders>true</RepeatRowHeaders>
             <DataSetName>Sales</DataSetName>
             <Top>1.22917in</Top>
-            <Left>0.4375in</Left>
-            <Height>1.13542in</Height>
-            <Width>7.58332in</Width>
+            <Left>0.125in</Left>
+            <Height>1.06232in</Height>
+            <Width>7.36402in</Width>
             <Style>
               <Border>
                 <Style>Solid</Style>
@@ -900,7 +904,7 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
                 </Style>
               </Paragraph>
             </Paragraphs>
-            <Top>0.0625in</Top>
+            <Top>0.1875in</Top>
             <Left>2.07986in</Left>
             <Height>0.63542in</Height>
             <Width>4.48959in</Width>
@@ -915,10 +919,10 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
             <Source>Embedded</Source>
             <Value>logopart</Value>
             <Sizing>FitProportional</Sizing>
-            <Top>0.0625in</Top>
+            <Top>0.1875in</Top>
             <Left>0.1875in</Left>
-            <Height>0.91667in</Height>
-            <Width>1.64583in</Width>
+            <Height>0.75074in</Height>
+            <Width>1.44791in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -927,10 +931,10 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
             </Style>
           </Image>
         </ReportItems>
-        <Height>11in</Height>
+        <Height>2.58389in</Height>
         <Style />
       </Body>
-      <Width>8.5in</Width>
+      <Width>7.62901in</Width>
       <Page>
         <PageHeader>
           <Height>0.30208in</Height>
@@ -973,7 +977,7 @@ WHERE (SOH.OrderDate BETWEEN '07/01/2012' AND '06/30/2014')
               </Paragraphs>
               <rd:DefaultName>PageNumber</rd:DefaultName>
               <Top>0.06701in</Top>
-              <Left>2.81709in</Left>
+              <Left>2.56709in</Left>
               <Height>0.25in</Height>
               <Width>2.86583in</Width>
               <Style>

@@ -10,7 +10,7 @@
       <am:Name>SSDTRS</am:Name>
       <am:Version>17.11.35222.181</am:Version>
     </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2024-09-08T23:50:27.8941627Z</am:LastModifiedTimestamp>
+    <am:LastModifiedTimestamp>2024-09-11T04:32:27.3616370Z</am:LastModifiedTimestamp>
   </am:AuthoringMetadata>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -186,7 +186,7 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
             </Paragraphs>
             <Top>0.125in</Top>
             <Height>0.375in</Height>
-            <Width>6.31145in</Width>
+            <Width>4.83286in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -240,9 +240,9 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
               </Paragraph>
             </Paragraphs>
             <Top>0.625in</Top>
-            <Left>1in</Left>
+            <Left>0.625in</Left>
             <Height>0.375in</Height>
-            <Width>4.375in</Width>
+            <Width>4.20786in</Width>
             <ZIndex>1</ZIndex>
             <Style />
           </Textbox>
@@ -250,13 +250,13 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>1.65772in</Width>
+                  <Width>1.39326in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>4.15772in</Width>
+                  <Width>3.48546in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.65772in</Width>
+                  <Width>1.22639in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -815,10 +815,10 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
             <FixedRowHeaders>true</FixedRowHeaders>
             <NoRowsMessage>No data found for Current Month Order Summary table.</NoRowsMessage>
             <DataSetName>EmpSalesDetail</DataSetName>
-            <Top>5.66799in</Top>
-            <Left>0.496in</Left>
+            <Top>5.16799in</Top>
+            <Left>0.121in</Left>
             <Height>1.8887in</Height>
-            <Width>7.47316in</Width>
+            <Width>6.10511in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -835,9 +835,9 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
             <MIMEType>image/jpeg</MIMEType>
             <Sizing>Fit</Sizing>
             <Top>0.125in</Top>
-            <Left>6.31145in</Left>
-            <Height>0.69444in</Height>
-            <Width>1.65772in</Width>
+            <Left>4.93081in</Left>
+            <Height>0.68425in</Height>
+            <Width>1.42774in</Width>
             <ZIndex>3</ZIndex>
             <Style />
           </Image>
@@ -1127,9 +1127,9 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
             </ChartNoDataMessage>
             <DataSetName>EmpSalesYearOverYear</DataSetName>
             <Top>1.16628in</Top>
-            <Left>0.32477in</Left>
+            <Left>0.07477in</Left>
             <Height>3.74467in</Height>
-            <Width>7.47317in</Width>
+            <Width>6.15134in</Width>
             <ZIndex>4</ZIndex>
             <CustomProperties>
               <CustomProperty>
@@ -1152,20 +1152,10 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
         <Height>11in</Height>
         <Style />
       </Body>
-      <Width>8.5in</Width>
+      <Width>6.35855in</Width>
       <Page>
-        <PageHeader>
-          <Height>0.4472in</Height>
-          <PrintOnFirstPage>true</PrintOnFirstPage>
-          <PrintOnLastPage>true</PrintOnLastPage>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-          </Style>
-        </PageHeader>
         <PageFooter>
-          <Height>0.5in</Height>
+          <Height>0.32285in</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -1194,8 +1184,7 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>PageNumber</rd:DefaultName>
-              <Top>0.125in</Top>
-              <Left>2.81709in</Left>
+              <Left>1.81709in</Left>
               <Height>0.25in</Height>
               <Width>2.86583in</Width>
               <Style>
@@ -1215,10 +1204,10 @@ GROUP BY    C.FirstName + ' ' + C.LastName, DATEPART(Month, SOH.OrderDate), SOH.
             </Border>
           </Style>
         </PageFooter>
-        <LeftMargin>0.75in</LeftMargin>
-        <RightMargin>0.75in</RightMargin>
-        <TopMargin>0.5in</TopMargin>
-        <BottomMargin>0.5in</BottomMargin>
+        <LeftMargin>1in</LeftMargin>
+        <RightMargin>1in</RightMargin>
+        <TopMargin>1in</TopMargin>
+        <BottomMargin>1in</BottomMargin>
         <Style />
       </Page>
     </ReportSection>

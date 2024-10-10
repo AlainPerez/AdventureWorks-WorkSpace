@@ -8,9 +8,9 @@
     </am:CreatedBy>
     <am:UpdatedBy>
       <am:Name>SSDTRS</am:Name>
-      <am:Version>17.11.35222.181</am:Version>
+      <am:Version>17.11.35312.102</am:Version>
     </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2024-09-11T15:49:28.3106117Z</am:LastModifiedTimestamp>
+    <am:LastModifiedTimestamp>2024-10-10T18:20:17.9316904Z</am:LastModifiedTimestamp>
   </am:AuthoringMetadata>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -96,7 +96,7 @@ ORDER BY ST.Name</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Sales by</Value>
+                    <Value>Sales by </Value>
                     <Style>
                       <FontSize>24pt</FontSize>
                       <Color>LimeGreen</Color>

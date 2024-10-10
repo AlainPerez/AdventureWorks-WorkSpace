@@ -8,9 +8,9 @@
     </am:CreatedBy>
     <am:UpdatedBy>
       <am:Name>SSDTRS</am:Name>
-      <am:Version>17.11.35222.181</am:Version>
+      <am:Version>17.11.35312.102</am:Version>
     </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2024-09-11T15:45:35.4840276Z</am:LastModifiedTimestamp>
+    <am:LastModifiedTimestamp>2024-10-10T18:20:03.8828296Z</am:LastModifiedTimestamp>
   </am:AuthoringMetadata>
   <Author>Mary Lingel MSFT</Author>
   <AutoRefresh>0</AutoRefresh>
@@ -405,7 +405,7 @@ FROM Sales.Store s</CommandText>
                       </Style>
                     </TextRun>
                     <TextRun>
-                      <Value> CONTACT</Value>
+                      <Value> CONTACTS</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontSize>12pt</FontSize>
